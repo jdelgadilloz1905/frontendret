@@ -22,6 +22,7 @@ $datosCliente = ControladorClientes::ctrMostrarClientes("id",$incidencia["id_cli
 
 //Busco los datos del tecnico
 
+
 $datosTecnico = ControladorUsuarios::ctrMostrarUsuarios("id",$incidencia["id_tecnico"]);
 
 //Busco la ruta de la incidencia
