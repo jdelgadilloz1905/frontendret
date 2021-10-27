@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/extensiones/vendor/composer" />
+      <path value="$PROJECT_DIR$/extensiones/vendor/firebase/php-jwt" />
+      <path value="$PROJECT_DIR$/extensiones/vendor/google/apiclient" />
+      <path value="$PROJECT_DIR$/extensiones/vendor/google/apiclient-services" />
+      <path value="$PROJECT_DIR$/extensiones/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/extensiones/vendor/google/auth" />
+      <path value="$PROJECT_DIR$/extensiones/vendor/google/recaptcha" />
+      <path value="$PROJECT_DIR$/extensiones/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/extensiones/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/extensiones/vendor/paypal/rest-api-sdk-php" />
+      <path value="$PROJECT_DIR$/extensiones/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/extensiones/vendor/phpseclib/phpseclib" />
+      <path value="$PROJECT_DIR$/extensiones/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/extensiones/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/extensiones/vendor/guzzlehttp/guzzle" />
+    </include_path>
+  </component>
+</project>
