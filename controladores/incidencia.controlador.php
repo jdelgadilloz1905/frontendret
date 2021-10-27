@@ -1193,7 +1193,7 @@ class ControladorIncidencia{
 					"camara" => (isset($_POST["camara"])) ? $_POST["camara"] : "",
 					"detalle_equipos_utilizados" => (isset($_POST["detalleEquiposUtilizados"])) ? $_POST["detalleEquiposUtilizados"] : "",
 					"comentario" => (isset($_POST["comentario"])) ? $_POST["comentario"] : "",
-					"tecnico_adicional" => (isset($_POST["tecnicoAdicional"])) ? $_POST["tecnicoAdicional"] : "",
+					"tecnico_adicional" => (isset($_POST["tecnicoAdicional"])) ? json_encode($_POST["tecnicoAdicional"]) : "",
 					"titulo" => (isset($_POST["titulo"])) ? $_POST["titulo"] : "",
 					"nombre_letra_molde" => (isset($_POST["nombreLetraMolde"])) ? $_POST["nombreLetraMolde"] : "",
 					"hora_entrada" =>$_POST["horaEntrada"],
@@ -1329,13 +1329,14 @@ class ControladorIncidencia{
 					"aceites_vegetales" => (isset($_POST["aceitesVegetales"])) ? $_POST["aceitesVegetales"] : "",
 					"otros4" => (isset($_POST["otros4"])) ? $_POST["otros4"] : "",
 					"total_desperciado" => $_POST["totalDesperciado"],
-					"tecnico_adicional" => $_POST["tecnicoAdicional"],
+					"tecnico_adicional" => json_encode($_POST["tecnicoAdicional"]),
 					"hora_entrada" =>$_POST["horaEntrada"],
 					"hora_salida" =>$_POST["horaSalida"],
 					"planta_tratamiento"=>(isset($_POST["planta_tratamiento"])) ? $_POST["planta_tratamiento"] : "",
 					"otra_facilidad" =>(isset($_POST["otra_facilidad"])) ? $_POST["otra_facilidad"] : "",
 					"otros5" => (isset($_POST["otros5"])) ? $_POST["otros5"] : ""
 				);
+
 				if(isset($respuesta["id_incidencia"])){
 					//ACTUALIZAMOS
 

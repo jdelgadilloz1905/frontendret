@@ -14,6 +14,8 @@ $datosCliente = ControladorClientes::ctrMostrarClientes("id",$incidencia["id_cli
 //Busco los datos del tecnico
 $datosTecnico = ControladorUsuarios::ctrMostrarUsuarios("id",$incidencia["id_tecnico"]);
 
+$listaVendedor = ControladorUsuarios::ctrListaUsuariosFiltro("perfil","Tecnico");
+
 //BUSCO EL SERVICIO DE LA INCIDENCIA
 
 $servicio = ControladorIncidencia::ctrMostrarServicio("servicio_general","id_incidencia",$id_incidencia);
@@ -579,7 +581,24 @@ PÁGINA DE USUARIOS
                                                 <div class="form-group row">
                                                     <label class="control-label text-right col-md-6">Técnicos Adicionales</label>
                                                     <div class="col-md-6">
-                                                        <input type="text" name="tecnicoAdicional" class="form-control">
+
+                                                        <div class="input-group">
+                                                            <select class="select2 select2-multiple" name="tecnicoAdicional[]" style="width: 100%" multiple="multiple" data-placeholder="Seleccione otro técnico">
+
+
+                                                                <?php
+
+                                                                foreach ($listaVendedor as $key => $value) {
+
+                                                                    echo '<option value="'.$value["id"].'" selected>'.$value["nombre"].'</option>';
+
+                                                                }
+
+                                                                ?>
+
+                                                            </select>
+                                                        </div>
+<!--                                                        <input type="text" name="tecnicoAdicional" class="form-control">-->
                                                     </div>
                                                 </div>
                                             </div>
