@@ -590,7 +590,7 @@ PÁGINA DE USUARIOS
 
                                                                 foreach ($listaVendedor as $key => $value) {
 
-                                                                    echo '<option value="'.$value["id"].'" selected>'.$value["nombre"].'</option>';
+                                                                    echo '<option value="'.$value["id"].'" >'.$value["nombre"].'</option>';
 
                                                                 }
 

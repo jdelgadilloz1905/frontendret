@@ -14,6 +14,8 @@ $datosCliente = ControladorClientes::ctrMostrarClientes("id",$incidencia["id_cli
 //Busco los datos del tecnico
 $datosTecnico = ControladorUsuarios::ctrMostrarUsuarios("id",$incidencia["id_tecnico"]);
 
+$listaVendedor = ControladorUsuarios::ctrListaUsuariosFiltro("perfil","Tecnico");
+
 //BUSCO EL SERVICIO DE LA INCIDENCIA
 
 $servicio = ControladorIncidencia::ctrMostrarServicio("servicio_plomeria","id_incidencia",$id_incidencia);
@@ -553,7 +555,27 @@ PÁGINA DE USUARIOS
                                         <div class="form-group row">
                                             <label class="control-label text-right col-md-6 m-t-15">Técnicos Adicionales:</label>
                                             <div class="col-md-6">
-                                                <input type="text" name="tecnicoAdicional" class="form-control" value="<?php echo $servicio["tecnico_adicional"]; ?>" disabled>
+                                                <div class="input-group">
+                                                    <select class="select2 select2-multiple" name="tecnicoAdicional[]" style="width: 100%" multiple="multiple" data-placeholder="Seleccione otro técnico" disabled>
+
+
+                                                        <?php
+
+                                                        foreach ($listaVendedor as $key => $value) {
+
+                                                            $pos = strpos($servicio["tecnico_adicional"],$value["id"]);
+
+                                                            if($pos == true ){
+                                                                echo '<option value="'.$value["id"].'" selected>'.$value["nombre"].'</option>';
+                                                            } else {
+                                                                echo '<option value="'.$value["id"].'" >'.$value["nombre"].'</option>';
+                                                            }
+                                                        }
+
+                                                        ?>
+
+                                                    </select>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

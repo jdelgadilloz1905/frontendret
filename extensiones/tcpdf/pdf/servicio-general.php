@@ -33,6 +33,9 @@ class imprimirServicioPlomeria{
 //Busco los datos del tecnico
         $datosTecnico = ControladorUsuarios::ctrMostrarUsuarios("id",$incidencia["id_tecnico"]);
 
+        $listaVendedor = ControladorUsuarios::ctrListaUsuariosFiltro("perfil","Tecnico");
+
+
 //BUSCO EL SERVICIO DE LA INCIDENCIA
 
         $servicio = ControladorIncidencia::ctrMostrarServicio("servicio_general","id_incidencia",$id_incidencia);
@@ -53,6 +56,18 @@ class imprimirServicioPlomeria{
             $tipoServicio = "Limpieza de campana";
             break;
     }
+
+        $nombre_tecnicos='';
+        foreach ($listaVendedor as $key => $value) {
+
+            $pos = strpos($servicio["tecnico_adicional"],$value["id"]);
+
+            if($pos == true ){
+                $nombre_tecnicos .= $value["nombre"].", ";
+            }
+        }
+
+
 
         $vaciado=$servicio["vaciado"] == "on" ? "checked" : "";
         $vaciado_parcial=$servicio["vaciado_parcial"] == "on" ? "checked" : "";
@@ -372,7 +387,7 @@ EOF;
                     <br>
                         <label>Hora Salida: <strong>$incidencia[hora_fin]</strong> </label>
                     <br>
-                        <label>Técnicos adicionales: <strong>$servicio[tecnico_adicional]</strong> </label>
+                        <label>Técnicos adicionales: <strong>$nombre_tecnicos</strong> </label>
 
                 </td>
             </tr>
