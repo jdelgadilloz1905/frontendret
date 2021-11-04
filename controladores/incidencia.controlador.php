@@ -20,11 +20,11 @@ class ControladorIncidencia{
     MOSTRAR Incidencia FILTRO
     =============================================*/
 
-    static public function ctrMostrarIncidenciasFiltro($item, $valor){
+    static public function ctrMostrarIncidenciasFiltro($item, $valor, $aprobado){
 
         $tabla = "incidencias";
 
-        $respuesta = ModeloIncidencia::mdlMostrarIncidenciasFiltro($tabla, $item, $valor);
+        $respuesta = ModeloIncidencia::mdlMostrarIncidenciasFiltro($tabla, $item, $valor, $aprobado);
 
         return $respuesta;
 

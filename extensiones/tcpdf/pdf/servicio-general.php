@@ -113,11 +113,11 @@ class imprimirServicioPlomeria{
 
 
         $nombreTecnico = ucwords($datosTecnico["nombre"]);
-        $fecha_aprobacion = ($incidencia["aprobado"]==1 ? date_format(date_create($incidencia["fecha_modif"]),"d-m-Y ") : "");
+        $fecha_aprobacion = ($incidencia["aprobado"]==1 ? date_format(date_create($incidencia["fecha_modif"]),"m-d-Y ") : "");
         $nombre_usuario_aprobado = ($incidencia["aprobado"]==1 ? $incidencia["nombre_usuario_aprobado"] : "");
         $image_firma = ($incidencia["aprobado"]==1 ? "$url/vistas/img/firmas/tercero.png" : "");
 
-        $fecha_visita = date_format(date_create($incidencia["fecha_visita"]),"d-m-Y ");
+        $fecha_visita = date_format(date_create($incidencia["fecha_visita"]),"m-d-Y ");
 
 
     //REQUERIMOS LA CLASE TCPDF
@@ -201,12 +201,12 @@ EOF;
 
             <tr>
 
-            <td style="border: 1px solid #666; background-color:white; width:270px">Cliente: $datosCliente[nombre]</td>
+            <td style="border: 1px solid #666; background-color:white; width:270px">Cliente: $datosCliente[alias] - $datosCliente[localizador] - $datosCliente[documento]</td>
 
 
-            <td style="border: 1px solid #666; background-color:white; width:170px; text-align:left">Fecha: $fecha_visita</td>
+            <td style="border: 1px solid #666; background-color:white; width:140px; text-align:left">Fecha: $fecha_visita</td>
             
-            <td style="border: 1px solid #666; background-color:white; width:100px; text-align:left">Grupo: $datosCliente[alias]</td>
+            <td style="border: 1px solid #666; background-color:white; width:130px; text-align:left">Grupo: $datosCliente[alias] </td>
 
             </tr>
 
@@ -220,7 +220,7 @@ EOF;
 
             <tr>
 
-                <td style="border: 1px solid #666; background-color:white; text-align:center; width:300px"><h4>SERVICIOS REGULARES DE REMODELACION A TRAMPAS DE GRASA</h4></td>
+                <td style="border: 1px solid #666; background-color:white; text-align:center; width:300px"><h4>SERVICIOS REGULARES DE REMOCION A TRAMPAS DE GRASA</h4></td>
 
                 <td style="border: 1px solid #666; background-color:white; text-align:center; width:150px"><h4>SERVICIO REALIZADO EN</h4></td>
 
@@ -258,6 +258,10 @@ EOF;
                     <input type="checkbox" name="estacion_bombas" value="1" checked="$estacion_bombas" disabled/> <label for="estacion_bombas">Estación de Bombas</label>
                     <br>
                     <input type="checkbox" name="tanque_recibidor" value="1" checked="$tanque_recibidor" disabled/> <label for="tanque_recibidor">Tanque Recibidor y/o Igualación</label>
+                    <br>
+                    <input type="checkbox" name="tanque_aceites" value="1" checked="$tanque_aceites" disabled/> <label for="tanque_aceites">Tanque Aceites Freidoras</label>
+                    <br>
+                    <input type="checkbox" name="otros1" value="1" checked="$otros1" disabled/> <label for="otros1">Otro</label>
 
                  </td>
 

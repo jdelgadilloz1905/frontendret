@@ -93,13 +93,13 @@ class imprimirServicioPlomeria{
         $botas=$servicio["botas"] == "on" ? "checked" : "";
         $capacete=$servicio["capacete"] == "on" ? "checked" : "";
         $camara=$servicio["camara"] == "on" ? "checked" : "";
-        $fecha_aprobacion = ($incidencia["aprobado"]==1 ? date_format(date_create($incidencia["fecha_modif"]),"d-m-Y ") : "");
+        $fecha_aprobacion = ($incidencia["aprobado"]==1 ? date_format(date_create($incidencia["fecha_modif"]),"m-d-Y ") : "");
         $nombre_usuario_aprobado = ($incidencia["aprobado"]==1 ? $incidencia["nombre_usuario_aprobado"] : "");
         $image_firma = ($incidencia["aprobado"]==1 ? "$url/vistas/img/firmas/tercero.png" : "");
 
         $nombreTecnico = ucwords($datosTecnico["nombre"]);
 
-        $fecha_visita = date_format(date_create($incidencia["fecha_visita"]),"d-m-Y ");
+        $fecha_visita = date_format(date_create($incidencia["fecha_visita"]),"m-d-Y ");
 
     //REQUERIMOS LA CLASE TCPDF
 
@@ -181,7 +181,7 @@ EOF;
 
             <tr>
 
-            <td style="border: 1px solid #666; background-color:white; width:270px">Cliente: $datosCliente[nombre]</td>
+            <td style="border: 1px solid #666; background-color:white; width:270px">Cliente: $datosCliente[alias] - $datosCliente[localizador] - $datosCliente[documento]</td>
 
 
             <td style="border: 1px solid #666; background-color:white; width:270px; text-align:left">Fecha: $fecha_visita</td>

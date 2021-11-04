@@ -40,11 +40,11 @@ class ModeloIncidencia{
 	MOSTRAR Incidencia
 	=============================================*/
 
-    static public function mdlMostrarIncidenciasFiltro($tabla, $item, $valor){
+    static public function mdlMostrarIncidenciasFiltro($tabla, $item, $valor, $aprobado){
 
 
 
-        $stmt = Conexion::conectar()->prepare("SELECT c.nombre nombreCliente, c.direccion direccionCliente, t.nombre nombreTecnico,  u.nombre nombreUsuario, i.*,
+        $stmt = Conexion::conectar()->prepare("SELECT c.nombre nombreCliente, c.direccion direccionCliente,c.documento, c.localizador, t.nombre nombreTecnico,  u.nombre nombreUsuario, i.*,
                                                           (SELECT g.alias FROM grupo_cliente g WHERE g.id = i.id_grupo) AS alias
                                                         FROM $tabla i
                                                         LEFT JOIN usuarios u
@@ -53,7 +53,7 @@ class ModeloIncidencia{
                                                           ON i.id_tecnico = t.id
                                                         LEFT JOIN clientes c
                                                           ON i.id_cliente = c.id 
-                                                        WHERE $item = :$item order by i.fecha_visita DESC ");
+                                                        WHERE $item = :$item and i.aprobado = $aprobado order by i.fecha_visita DESC ");
 
         $stmt -> bindParam(":".$item, $valor, PDO::PARAM_STR);
 

@@ -75,7 +75,7 @@ PÁGINA DE USUARIOS
                                         <div class="form-group row">
                                             <label class="control-label text-right col-md-4 col-5">Grupo:</label>
                                             <div class="col-md-8 col-7">
-                                                <p class="form-control-static"> <?php echo $datosCliente["alias"] ?> </p>
+                                                <p class="form-control-static"> <?php echo $datosCliente["alias"] ."-". $datosCliente["localizador"] ."-".$datosCliente["documento"]?> </p>
                                             </div>
                                         </div>
                                     </div>
