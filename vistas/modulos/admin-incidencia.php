@@ -110,7 +110,7 @@ PÁGINA DE USUARIOS
                                             <th>Cliente</th>
                                             <th>Direccion</th>
                                             <th>Tecnico</th>
-                                            <th>Asunto</th>
+                                            <th>Tipo Servicio</th>
                                             <th>Prioridad</th>
                                             <th>Fecha creacion</th>
                                             <th>Fecha visita</th>
@@ -201,7 +201,7 @@ PÁGINA DE USUARIOS
 
                                             <td>'.(!empty($value["nombreTecnico"]) ? $value["nombreTecnico"] : "").'</td>
 
-                                            <td>'.($value["asunto"]).'</td>
+                                            <td>'.(str_replace("-"," ",$value["tipo_servicio"])).'</td>
 
                                             <td>'.($value["prioridad"]).'</td>
                                             
@@ -261,7 +261,7 @@ PÁGINA DE USUARIOS
                                             <th>Cliente</th>
                                             <th>Direccion</th>
                                             <th>Tecnico</th>
-                                            <th>Asunto</th>
+                                            <th>Tipo servicio</th>
                                             <th>Prioridad</th>
                                             <th>Fecha creacion</th>
                                             <th>Fecha visita</th>
@@ -349,13 +349,13 @@ PÁGINA DE USUARIOS
 
                                             <td>'.($selector).'</td>
                                             
-                                            <td>'.($value["nombreCliente"]).'</td>
+                                            <td>'.($value["alias"] .'-'.$value["localizador"].'-'.$value["documento"]).'</td>
 
                                             <td>'.($value["direccionCliente"]).'</td>
 
                                             <td>'.($value["nombreTecnico"]).'</td>
 
-                                            <td>'.($value["asunto"]).'</td>
+                                            <td>'.(str_replace("-"," ",$value["tipo_servicio"])).'</td>
 
                                             <td>'.($value["prioridad"]).'</td>
 
@@ -415,7 +415,7 @@ PÁGINA DE USUARIOS
                                             <th>Cliente</th>
                                             <th>Direccion</th>
                                             <th>Tecnico</th>
-                                            <th>Asunto</th>
+                                            <th>Tipo servicio</th>
                                             <th>Prioridad</th>
                                             <th>Fecha creacion</th>
                                             <th>Fecha visita</th>
@@ -504,13 +504,13 @@ PÁGINA DE USUARIOS
 
                                             <td>'.($value["aprobado"] == 0 ? ($selector) : "").'</td>
                                             
-                                            <td>'.($value["nombreCliente"]).'</td>
+                                            <td>'.($value["alias"] .'-'.$value["localizador"].'-'.$value["documento"]).'</td>
 
                                             <td>'.($value["direccionCliente"]).'</td>
 
                                             <td>'.($value["nombreTecnico"]).'</td>
 
-                                            <td>'.($value["asunto"]).'</td>
+                                            <td>'.(str_replace("-"," ",$value["tipo_servicio"])).'</td>
 
                                             <td>'.($value["prioridad"]).'</td>
 
@@ -569,7 +569,7 @@ PÁGINA DE USUARIOS
                                             <th>Cliente</th>
                                             <th>Direccion</th>
                                             <th>Tecnico</th>
-                                            <th>Asunto</th>
+                                            <th>Tipo servicio</th>
                                             <th>Prioridad</th>
                                             <th>Fecha creacion</th>
                                             <th>Fecha visita</th>
@@ -658,13 +658,13 @@ PÁGINA DE USUARIOS
 
                                             <td>'.($value["aprobado"] == 0 ? ($selector) : "").'</td>
                                             
-                                            <td>'.($value["nombreCliente"]).'</td>
+                                            <td>'.($value["alias"] .'-'.$value["localizador"].'-'.$value["documento"]).'</td>
 
                                             <td>'.($value["direccionCliente"]).'</td>
 
                                             <td>'.($value["nombreTecnico"]).'</td>
 
-                                            <td>'.($value["asunto"]).'</td>
+                                            <td>'.(str_replace("-"," ",$value["tipo_servicio"])).'</td>
 
                                             <td>'.($value["prioridad"]).'</td>
 

@@ -92,7 +92,12 @@ class ModeloIncidencia{
         =============================================*/
 	static public function mdlMostrarIncidenciasTecnicoEstatus($tabla, $item, $valor,$item2, $valor2){
 
-        $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $item = :$item AND $item2 = :$item2 order by fecha_creacion asc");
+        $stmt = Conexion::conectar()->prepare("SELECT c.nombre nombreCliente, c.direccion direccionCliente,c.documento, c.localizador,i.*,
+                                                                (SELECT g.alias FROM grupo_cliente g WHERE g.id = i.id_grupo) AS alias  
+                                                            FROM $tabla i 
+                                                            LEFT JOIN clientes c
+                                                              ON i.id_cliente = c.id 
+                                                            WHERE $item = :$item AND $item2 = :$item2 order by i.fecha_creacion asc");
 
         $stmt -> bindParam(":".$item, $valor, PDO::PARAM_STR);
         $stmt -> bindParam(":".$item2, $valor2, PDO::PARAM_INT);

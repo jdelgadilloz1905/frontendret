@@ -101,7 +101,8 @@ PÁGINA DE USUARIOS
                                         <tr>
 
                                             <th style="width:10px">#</th>
-                                            <th>Asunto</th>
+                                            <th>Cliente</th>
+                                            <th>Tipo servicio</th>
                                             <th>Dirección</th>
                                             <th>Abierto por</th>
                                             <th>Prioridad</th>
@@ -179,8 +180,10 @@ PÁGINA DE USUARIOS
                                             echo ' <tr>
 
                                             <td>'.($value["id"]).'</td>
+                                            
+                                            <td>'.($value["alias"] .'-'.$value["localizador"].'-'.$value["documento"]).'</td>
 
-                                            <td>'.($value["asunto"]).'</td>
+                                            <td>'.(str_replace("-"," ",$value["tipo_servicio"])).'</td>
 
                                             <td>'.($nombreCliente["direccion"]).'</td>
 
@@ -239,7 +242,8 @@ PÁGINA DE USUARIOS
                                         <tr>
 
                                             <th style="width:10px">#</th>
-                                            <th>Asunto</th>
+                                            <th>Cliente</th>
+                                            <th>Tipo servicio</th>
                                             <th>Dirección</th>
                                             <th>Abierto por</th>
                                             <th>Prioridad</th>
@@ -317,8 +321,10 @@ PÁGINA DE USUARIOS
                                             echo ' <tr>
 
                                             <td>'.($value["id"]).'</td>
+                                                                                       
+                                            <td>'.($value["alias"] .'-'.$value["localizador"].'-'.$value["documento"]).'</td>
 
-                                            <td>'.($value["asunto"]).'</td>
+                                            <td>'.(str_replace("-"," ",$value["tipo_servicio"])).'</td>
 
                                             <td>'.($nombreCliente["direccion"]).'</td>
 
@@ -376,7 +382,8 @@ PÁGINA DE USUARIOS
                                         <tr>
 
                                             <th style="width:10px">#</th>
-                                            <th>Asunto</th>
+                                            <th>Cliente</th>
+                                            <th>Tipo servicio</th>
                                             <th>Dirección</th>
                                             <th>Abierto por</th>
                                             <th>Prioridad</th>
@@ -454,8 +461,10 @@ PÁGINA DE USUARIOS
                                             echo ' <tr>
 
                                             <td>'.($value["id"]).'</td>
+                                            
+                                            <td>'.($value["alias"] .'-'.$value["localizador"].'-'.$value["documento"]).'</td>
 
-                                            <td>'.($value["asunto"]).'</td>
+                                            <td>'.(str_replace("-"," ",$value["tipo_servicio"])).'</td>
 
                                             <td>'.($nombreCliente["direccion"]).'</td>
 
