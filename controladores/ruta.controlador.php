@@ -2,36 +2,36 @@
 
 class ControladorRuta{
 
-	/*=============================================
-	CREAR RUTA
-	=============================================*/
+    /*=============================================
+    CREAR RUTA
+    =============================================*/
 
-	static public function ctrCrearRuta(){
+    static public function ctrCrearRuta(){
 
-		if(isset($_POST["nuevaRuta"])){
+        if(isset($_POST["nuevaRuta"])){
 
-			if(preg_match('/^[a-zA-Z0-9ñÑáéíóúÁÉÍÓÚ ]+$/', $_POST["nuevaRuta"])){
+            if(preg_match('/^[a-zA-Z0-9ñÑáéíóúÁÉÍÓÚ ]+$/', $_POST["nuevaRuta"])){
 
-				$tabla = "rutas";
+                $tabla = "rutas";
 
-				$datos = $_POST["nuevaRuta"];
+                $datos = $_POST["nuevaRuta"];
 
-				$respuesta = ModeloRuta::mdlIngresarNuevaRuta($tabla, $datos);
+                $respuesta = ModeloRuta::mdlIngresarNuevaRuta($tabla, $datos);
 
-				if($respuesta == "ok"){
+                if($respuesta == "ok"){
 
-					echo'<script>
+                    echo'<script>
 
 					        window.location = "crear-ruta";
 
 					</script>';
 
-				}
+                }
 
 
-			}else{
+            }else{
 
-				echo'<script>
+                echo'<script>
 
 					swal({
 						  type: "error",
@@ -49,25 +49,25 @@ class ControladorRuta{
 
 			  	</script>';
 
-			}
+            }
 
-		}
+        }
 
-	}
+    }
 
-	/*=============================================
-	MOSTRAR RUTAS
-	=============================================*/
+    /*=============================================
+    MOSTRAR RUTAS
+    =============================================*/
 
-	static public function ctrMostrarRutas($item, $valor,$item2, $valor2){
+    static public function ctrMostrarRutas($item, $valor,$item2, $valor2){
 
-		$tabla = "rutas";
+        $tabla = "rutas";
 
-		$respuesta = ModeloRuta::mdlMostrarRutas($tabla, $item, $valor,$item2, $valor2);
+        $respuesta = ModeloRuta::mdlMostrarRutas($tabla, $item, $valor,$item2, $valor2);
 
-		return $respuesta;
-	
-	}
+        return $respuesta;
+
+    }
 
     /*=============================================
     MOSTRAR RUTAS SIN DETALLE
@@ -81,13 +81,13 @@ class ControladorRuta{
 
     }
 
-	/*=============================================
-	BORRAR RUTAS
-	=============================================*/
+    /*=============================================
+    BORRAR RUTAS
+    =============================================*/
 
-	static public function ctrBorrarRuta(){
+    static public function ctrBorrarRuta(){
 
-		if(isset($_GET["idRuta"])){
+        if(isset($_GET["idRuta"])){
 
             $tabla ="rutas";
             $datos = $_GET["idRuta"];
@@ -119,14 +119,14 @@ class ControladorRuta{
                 </script>';
             }
 
-		}
-		
-	}
+        }
+
+    }
 
     /*=============================================
         CREAR DETALLE DE LAS RUTAS
     =============================================*/
-	static public function ctrCrearRutaDetalle(){
+    static public function ctrCrearRutaDetalle(){
 
         if(isset($_POST["crearRuta"])){
 

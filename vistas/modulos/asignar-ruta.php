@@ -82,16 +82,16 @@ $listaVendedor = ControladorUsuarios::ctrListaUsuariosFiltro("perfil","Tecnico")
 
                                         <option value="">Asignar a:</option>
 
-                                            <?php
+                                        <?php
 
 
-                                            foreach ($listaVendedor as $key => $value) {
+                                        foreach ($listaVendedor as $key => $value) {
 
-                                                echo '<option value="'.$value["id"].'">'.$value["nombre"].'</option>';
+                                            echo '<option value="'.$value["id"].'">'.$value["nombre"].'</option>';
 
-                                            }
+                                        }
 
-                                            ?>
+                                        ?>
 
                                     </select>
 
@@ -163,7 +163,7 @@ $listaVendedor = ControladorUsuarios::ctrListaUsuariosFiltro("perfil","Tecnico")
 
                             <div class="form-group row nuevaRutaTabla">
                                 <div class="col-md-12">
-<!--                                    <input type="hidden" id="listaClientes" name="listaClientes">-->
+                                    <!--                                    <input type="hidden" id="listaClientes" name="listaClientes">-->
 
                                     <input type="hidden" class="form-control input-lg" name="listaTienda" id="listaTienda" value="" readonly>
                                 </div>
@@ -174,13 +174,13 @@ $listaVendedor = ControladorUsuarios::ctrListaUsuariosFiltro("perfil","Tecnico")
                             BOTÓN PARA AGREGAR TIENDAS
                             ======================================-->
 
-<!--                            <button type="button" class="btn btn-default hidden-lg btnagregarClienteRuta">Agregar tienda</button>-->
+                            <!--                            <button type="button" class="btn btn-default hidden-lg btnagregarClienteRuta">Agregar tienda</button>-->
 
                             <hr>
                             <?php
 
-                                $crearOrden = new ControladorRuta();
-                                $crearOrden -> ctrAsignarRuta();
+                            $crearOrden = new ControladorRuta();
+                            $crearOrden -> ctrAsignarRuta();
 
                             ?>
                             <button type="submit" style="background-color: #f14e01; border: 1px solid #f14e01;" class="btn btn-primary m-t-20 asignarLocalDetalle" name="asignarRutaTecnico">Asignar ruta</button>

@@ -40,12 +40,12 @@ $respuesta = ModeloIncidencia::mdlMostrarIncidenciasEventos("incidencias",$_SESS
 
                     <div class="card-body">
 
-<!--                        <div class="row">-->
-<!--                            <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">-->
-<!--                                <h4 class="card-title">Extra Large modal <small>Click on image</small></h4>-->
-<!--                                <button type="button" class="btn waves-effect waves-light btn-block btn-info" data-toggle="modal" data-target="#add-new-event"><i class="ti-plus"></i> Agregar evento</button>-->
-<!--                            </div>-->
-<!--                        </div>-->
+                        <!--                        <div class="row">-->
+                        <!--                            <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">-->
+                        <!--                                <h4 class="card-title">Extra Large modal <small>Click on image</small></h4>-->
+                        <!--                                <button type="button" class="btn waves-effect waves-light btn-block btn-info" data-toggle="modal" data-target="#add-new-event"><i class="ti-plus"></i> Agregar evento</button>-->
+                        <!--                            </div>-->
+                        <!--                        </div>-->
                         <div id="calendar"></div>
                     </div>
                 </div>
@@ -63,7 +63,7 @@ $respuesta = ModeloIncidencia::mdlMostrarIncidenciasEventos("incidencias",$_SESS
                     <div class="modal-footer">
                         <button type="button" class="btn btn-white waves-effect" data-dismiss="modal">Cerrar</button>
                         <button type="button" class="btn btn-success save-event waves-effect waves-light">Crear evento</button>
-<!--                        <button type="button" class="btn btn-danger delete-event waves-effect waves-light" data-dismiss="modal">Eliminar</button>-->
+                        <!--                        <button type="button" class="btn btn-danger delete-event waves-effect waves-light" data-dismiss="modal">Eliminar</button>-->
                     </div>
                 </div>
             </div>
@@ -115,7 +115,7 @@ $respuesta = ModeloIncidencia::mdlMostrarIncidenciasEventos("incidencias",$_SESS
         <div class="right-sidebar">
             <div class="slimscrollright">
                 <div class="rpanel-title"> Service Panel
-                            <span>
+                    <span>
                                 <i class="ti-close right-side-toggle"></i>
                             </span>
                 </div>
@@ -164,79 +164,79 @@ $respuesta = ModeloIncidencia::mdlMostrarIncidenciasEventos("incidencias",$_SESS
                             <a href="javascript:void(0)" data-theme="megna-dark" class="megna-dark-theme ">12</a>
                         </li>
                     </ul>
-<!--                    <ul class="m-t-20 chatonline">-->
-<!--                        <li>-->
-<!--                            <b>Chat option</b>-->
-<!--                        </li>-->
-<!--                        <li>-->
-<!--                            <a href="javascript:void(0)">-->
-<!--                                <img src="../assets/images/users/1.jpg" alt="user-img" class="img-circle">-->
-<!--                                        <span>Varun Dhavan-->
-<!--                                            <small class="text-success">online</small>-->
-<!--                                        </span>-->
-<!--                            </a>-->
-<!--                        </li>-->
-<!--                        <li>-->
-<!--                            <a href="javascript:void(0)">-->
-<!--                                <img src="../assets/images/users/2.jpg" alt="user-img" class="img-circle">-->
-<!--                                        <span>Genelia Deshmukh-->
-<!--                                            <small class="text-warning">Away</small>-->
-<!--                                        </span>-->
-<!--                            </a>-->
-<!--                        </li>-->
-<!--                        <li>-->
-<!--                            <a href="javascript:void(0)">-->
-<!--                                <img src="../assets/images/users/3.jpg" alt="user-img" class="img-circle">-->
-<!--                                        <span>Ritesh Deshmukh-->
-<!--                                            <small class="text-danger">Busy</small>-->
-<!--                                        </span>-->
-<!--                            </a>-->
-<!--                        </li>-->
-<!--                        <li>-->
-<!--                            <a href="javascript:void(0)">-->
-<!--                                <img src="../assets/images/users/4.jpg" alt="user-img" class="img-circle">-->
-<!--                                        <span>Arijit Sinh-->
-<!--                                            <small class="text-muted">Offline</small>-->
-<!--                                        </span>-->
-<!--                            </a>-->
-<!--                        </li>-->
-<!--                        <li>-->
-<!--                            <a href="javascript:void(0)">-->
-<!--                                <img src="../assets/images/users/5.jpg" alt="user-img" class="img-circle">-->
-<!--                                        <span>Govinda Star-->
-<!--                                            <small class="text-success">online</small>-->
-<!--                                        </span>-->
-<!--                            </a>-->
-<!--                        </li>-->
-<!--                        <li>-->
-<!--                            <a href="javascript:void(0)">-->
-<!--                                <img src="../assets/images/users/6.jpg" alt="user-img" class="img-circle">-->
-<!--                                        <span>John Abraham-->
-<!--                                            <small class="text-success">online</small>-->
-<!--                                        </span>-->
-<!--                            </a>-->
-<!--                        </li>-->
-<!--                        <li>-->
-<!--                            <a href="javascript:void(0)">-->
-<!--                                <img src="../assets/images/users/7.jpg" alt="user-img" class="img-circle">-->
-<!--                                        <span>Hritik Roshan-->
-<!--                                            <small class="text-success">online</small>-->
-<!--                                        </span>-->
-<!--                            </a>-->
-<!--                        </li>-->
-<!--                        <li>-->
-<!--                            <a href="javascript:void(0)">-->
-<!--                                <img src="../assets/images/users/8.jpg" alt="user-img" class="img-circle">-->
-<!--                                        <span>Pwandeep rajan-->
-<!--                                            <small class="text-success">online</small>-->
-<!--                                        </span>-->
-<!--                            </a>-->
-<!--                        </li>-->
-<!--                    </ul>-->
+                    <!--                    <ul class="m-t-20 chatonline">-->
+                    <!--                        <li>-->
+                    <!--                            <b>Chat option</b>-->
+                    <!--                        </li>-->
+                    <!--                        <li>-->
+                    <!--                            <a href="javascript:void(0)">-->
+                    <!--                                <img src="../assets/images/users/1.jpg" alt="user-img" class="img-circle">-->
+                    <!--                                        <span>Varun Dhavan-->
+                    <!--                                            <small class="text-success">online</small>-->
+                    <!--                                        </span>-->
+                    <!--                            </a>-->
+                    <!--                        </li>-->
+                    <!--                        <li>-->
+                    <!--                            <a href="javascript:void(0)">-->
+                    <!--                                <img src="../assets/images/users/2.jpg" alt="user-img" class="img-circle">-->
+                    <!--                                        <span>Genelia Deshmukh-->
+                    <!--                                            <small class="text-warning">Away</small>-->
+                    <!--                                        </span>-->
+                    <!--                            </a>-->
+                    <!--                        </li>-->
+                    <!--                        <li>-->
+                    <!--                            <a href="javascript:void(0)">-->
+                    <!--                                <img src="../assets/images/users/3.jpg" alt="user-img" class="img-circle">-->
+                    <!--                                        <span>Ritesh Deshmukh-->
+                    <!--                                            <small class="text-danger">Busy</small>-->
+                    <!--                                        </span>-->
+                    <!--                            </a>-->
+                    <!--                        </li>-->
+                    <!--                        <li>-->
+                    <!--                            <a href="javascript:void(0)">-->
+                    <!--                                <img src="../assets/images/users/4.jpg" alt="user-img" class="img-circle">-->
+                    <!--                                        <span>Arijit Sinh-->
+                    <!--                                            <small class="text-muted">Offline</small>-->
+                    <!--                                        </span>-->
+                    <!--                            </a>-->
+                    <!--                        </li>-->
+                    <!--                        <li>-->
+                    <!--                            <a href="javascript:void(0)">-->
+                    <!--                                <img src="../assets/images/users/5.jpg" alt="user-img" class="img-circle">-->
+                    <!--                                        <span>Govinda Star-->
+                    <!--                                            <small class="text-success">online</small>-->
+                    <!--                                        </span>-->
+                    <!--                            </a>-->
+                    <!--                        </li>-->
+                    <!--                        <li>-->
+                    <!--                            <a href="javascript:void(0)">-->
+                    <!--                                <img src="../assets/images/users/6.jpg" alt="user-img" class="img-circle">-->
+                    <!--                                        <span>John Abraham-->
+                    <!--                                            <small class="text-success">online</small>-->
+                    <!--                                        </span>-->
+                    <!--                            </a>-->
+                    <!--                        </li>-->
+                    <!--                        <li>-->
+                    <!--                            <a href="javascript:void(0)">-->
+                    <!--                                <img src="../assets/images/users/7.jpg" alt="user-img" class="img-circle">-->
+                    <!--                                        <span>Hritik Roshan-->
+                    <!--                                            <small class="text-success">online</small>-->
+                    <!--                                        </span>-->
+                    <!--                            </a>-->
+                    <!--                        </li>-->
+                    <!--                        <li>-->
+                    <!--                            <a href="javascript:void(0)">-->
+                    <!--                                <img src="../assets/images/users/8.jpg" alt="user-img" class="img-circle">-->
+                    <!--                                        <span>Pwandeep rajan-->
+                    <!--                                            <small class="text-success">online</small>-->
+                    <!--                                        </span>-->
+                    <!--                            </a>-->
+                    <!--                        </li>-->
+                    <!--                    </ul>-->
                 </div>
             </div>
         </div>
-        
+
         <!-- ============================================================== -->
         <!-- End Right sidebar -->
         <!-- ============================================================== -->
@@ -391,22 +391,22 @@ $respuesta = ModeloIncidencia::mdlMostrarIncidenciasEventos("incidencias",$_SESS
                     right: 'month,agendaWeek,agendaDay'
                 },
                 events: [
-                <?php  foreach($respuesta as $event):
+                    <?php  foreach($respuesta as $event):
 
-                $start = explode(" ", $event['start']);
+                    $start = explode(" ", $event['start']);
 
 
 
-                ?>
-                {
-                    id: '<?php echo $event['id']; ?>',
-                    title: '<?php echo $event['title'] .' / '.str_replace("-"," ",$event['tipo_servicio']); ?>',
-                    start: '<?php echo $event['start']; ?>',
-                    color: '<?php echo $event['color']; ?>'
+                    ?>
+                    {
+                        id: '<?php echo $event['id']; ?>',
+                        title: '<?php echo $event['title'] .' / '.str_replace("-"," ",$event['tipo_servicio']); ?>',
+                        start: '<?php echo $event['start']; ?>',
+                        color: '<?php echo $event['color']; ?>'
 
-                },
-                <?php endforeach; ?>
-            ],
+                    },
+                    <?php endforeach; ?>
+                ],
                 //events:defaultEvents,
                 editable: false,
                 droppable: false, // this allows things to be dropped onto the calendar !!!
@@ -442,10 +442,10 @@ $respuesta = ModeloIncidencia::mdlMostrarIncidenciasEventos("incidencias",$_SESS
 
     })
 
-//initializing CalendarApp
+    //initializing CalendarApp
     $(document).ready(function() {
-            "use strict";
-            $.CalendarApp.init()
+        "use strict";
+        $.CalendarApp.init()
     })
 
-    </script>
+</script>

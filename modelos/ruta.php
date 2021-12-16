@@ -15,6 +15,11 @@ class Ruta
         return "http://localhost:8080/frontendret/";
         
     }
+
+    static public function ctrRutaPlanillaServicio(){
+
+        return "http://localhost:8080/frontendret/extensiones/tcpdf/pdf/";
+    }
 }
 
 ?>

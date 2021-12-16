@@ -58,8 +58,7 @@ $(document).ready(function() {
             events: [
                 {
                     title: 'All Day Event',
-                    start: new Date(year, month, day-8),
-
+                    start: new Date(year, month, day-8)
                 },
                 {
                     title: 'Long Event',

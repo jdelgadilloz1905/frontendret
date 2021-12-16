@@ -311,15 +311,15 @@ if($_SESSION["perfil"]=="Administrador"){
 
                                     if($_SESSION["perfil"] == "Administrador"){
 
-                                        echo '<a href="#" class="btn btn-info m-t-20 " id="verGenerarPlanilla" tipo_servicio = "'.$incidencia["tipo_servicio"].'" id_incidencia="'.$incidencia["id"].'"> <i class="fas fa-eye"></i> Ver Hoja de Servicio</a>';
+                                        echo '<a href="#" class="btn btn-info m-t-20 " id="verGenerarPlanilla" tipo_servicio = "'.$incidencia["tipo_servicio"].'" id_incidencia="'.$incidencia["id"].'"> <i class="fas fa-eye"></i> Ver Planilla de Servicio</a>';
 
                                     }else{
                                         if($incidencia["estatus_incidencia"] == 2){
 
-                                            echo '<a href="#" class="btn btn-info m-t-20 " id="verGenerarPlanilla" tipo_servicio = "'.$incidencia["tipo_servicio"].'" id_incidencia="'.$incidencia["id"].'"> <i class="fas fa-eye"></i> Ver Hoja de Servicio</a>';
+                                            echo '<a href="#" class="btn btn-info m-t-20 " id="verGenerarPlanilla" tipo_servicio = "'.$incidencia["tipo_servicio"].'" id_incidencia="'.$incidencia["id"].'"> <i class="fas fa-eye"></i> Ver Planilla de Servicio</a>';
                                         }else{
 
-                                            echo '<a href="#" class="btn btn-info m-t-20 " id="generarPlanilla" tipo_servicio = "'.$incidencia["tipo_servicio"].'" id_incidencia="'.$incidencia["id"].'"> <i class="far fa-file-alt"></i> Generar Hoja de Servicio </a>';
+                                            echo '<a href="#" class="btn btn-info m-t-20 " id="generarPlanilla" tipo_servicio = "'.$incidencia["tipo_servicio"].'" id_incidencia="'.$incidencia["id"].'"> <i class="far fa-file-alt"></i> Generar Planilla de Servicio </a>';
                                         }
 
                                     }

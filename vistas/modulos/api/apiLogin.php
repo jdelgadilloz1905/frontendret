@@ -10,8 +10,8 @@
 $json = file_get_contents('php://input');
 
 // decodifica el JSON recibido y lo almacena en la variable $obj
+$obj = json_decode($json,true);
 
-//echo json_encode(var_dump($obj));
 if($obj['funcion']=="validarLogin"){
     $password = $obj['password'];
     $usuario = strtolower($obj['usuario']);

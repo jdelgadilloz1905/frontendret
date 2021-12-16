@@ -140,7 +140,7 @@ $listaVendedor = ControladorUsuarios::ctrListaUsuariosFiltro("perfil","Tecnico")
                             BOTÓN PARA AGREGAR TIENDAS
                             ======================================-->
 
-<!--                            <button type="button" class="btn btn-default hidden-lg btnagregarClienteRuta">Agregar tienda</button>-->
+                            <!--                            <button type="button" class="btn btn-default hidden-lg btnagregarClienteRuta">Agregar tienda</button>-->
                             <div style="text-align: center; display: none;">
                                 <label>Esta ruta tiene tiendas asignadas</label>
                             </div>
@@ -148,12 +148,12 @@ $listaVendedor = ControladorUsuarios::ctrListaUsuariosFiltro("perfil","Tecnico")
                             <hr>
                             <?php
 
-                                $crearOrden = new ControladorRuta();
-                                $crearOrden -> ctrCrearRutaDetalle();
+                            $crearOrden = new ControladorRuta();
+                            $crearOrden -> ctrCrearRutaDetalle();
 
                             ?>
                             <button type="submit" style="background-color: #f14e01; border: 1px solid #f14e01;" class="btn btn-primary m-t-20" name="crearRuta">Crear ruta</button>
-<!--                            <button class="btn btn-danger m-t-20"><i class="fa fa-times"></i> Cancelar</button>-->
+                            <!--                            <button class="btn btn-danger m-t-20"><i class="fa fa-times"></i> Cancelar</button>-->
 
 
                         </form>

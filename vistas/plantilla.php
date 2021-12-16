@@ -62,10 +62,6 @@ $url = Ruta::ctrRuta();
     <!-- Daterange picker -->
     <link rel="stylesheet" href="<?php echo $url; ?>vistas/plugins/bootstrap-daterangepicker/daterangepicker.css">
 
-    <link href="<?php echo $url; ?>vistas/plugins/select2/dist/css/select2.css" rel="stylesheet" type="text/css" />
-
-    <link rel="stylesheet" href="<?php echo $url; ?>vistas/plugins/multiselect/css/multi-select.css">
-
 
 
     <!-- ============================================================== -->
@@ -289,10 +285,6 @@ if(isset($_SESSION["iniciarSesion"]) && $_SESSION["iniciarSesion"] == "ok"){
 <script src='<?php echo $url; ?>vistas/plugins/calendar/dist/fullcalendar.min.js'></script>
 <script src="<?php echo $url; ?>vistas/plugins/calendar/dist/cal-init.js"></script>
 
-<script src="<?php echo $url; ?>vistas/plugins/select2/dist/js/select2.full.js"></script>
-
-<script src="<?php echo $url; ?>vistas/plugins/multiselect/js/jquery.multi-select.js"></script>
-
 
 
 <!--=====================================
@@ -320,7 +312,6 @@ if(isset($_SESSION["iniciarSesion"]) && $_SESSION["iniciarSesion"] == "ok"){
 
 <script>
     //$('#mdate').bootstrapMaterialDatePicker({ weekStart: 0, time: false });
-    $(".select2").select2();
 </script>
 </body>
 

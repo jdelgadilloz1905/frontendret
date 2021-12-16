@@ -5,8 +5,6 @@ Data Table
 =============================================*/
 
 $(".tablas").DataTable({
-	responsive: true,
-	autoWidth: false,
 	"order": [[ 1, "asc" ]],
 	dom: 'Bfrtip',
 	buttons: [
@@ -41,7 +39,6 @@ $(".tablas").DataTable({
 	}
 
 });
-
 
 // $("#editarRutaEncabezado, #crearServicio").click(function () {
 //

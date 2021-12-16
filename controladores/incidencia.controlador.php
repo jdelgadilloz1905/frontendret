@@ -383,6 +383,20 @@ class ControladorIncidencia{
 
                 if ($respuesta=="ok"){
 
+                    //envio email de aprobado con el link del archivo a descargar
+                    $resultado = ModeloIncidencia::mdlShowDatosUsuarioXincidencia($_POST["aprobarIncidencias"]);
+                    if($resultado){
+
+                        foreach ($resultado as $key => $value){
+                            $tipo = $value["tipo_servicio"] == "plomeria" ? "servicio-plomeria.php?codigo=" : "servicio-general.php?codigo=";
+
+                            if(!empty($value["email"])){
+                                self::ctrEnviarEmailAprobacion($value,$tipo);
+                            }
+
+                        }
+                    }
+
                     echo'<script>
 
 				localStorage.removeItem("localMarcaIncidencia");
@@ -427,6 +441,89 @@ class ControladorIncidencia{
             }
 
         }
+    }
+
+    /*=============================================
+	ENVIAR EMAIL DE APROBACION
+	===============================================*/
+
+    static public function ctrEnviarEmailAprobacion($data,$tipo){
+
+        /*=============================================
+                        VERIFICACIÓN CORREO ELECTRÓNICO
+                      =============================================*/
+
+        date_default_timezone_set("America/Bogota");
+
+        $url = Ruta::ctrRutaPlanillaServicio();
+
+        $mail = new PHPMailer;
+
+        $mail->CharSet = 'UTF-8';
+
+        $mail->isMail();
+
+        $mail->setFrom('no-reply@ret.com', 'RET');
+
+        $mail->addReplyTo('jdelgadilloz1905@@gmail.com', 'RET');
+
+        $mail->Subject = "APROBACION DE SERVICIO";
+
+        $mail->addAddress($data["email"]);
+
+        $mail->msgHTML('
+                                <div style="width:100%; background:#eee; position:relative; font-family:sans-serif; padding-bottom:40px">
+
+                                    <div style="position:relative; margin:auto; width:600px; background:white; padding:20px">
+
+                                        <center>
+
+                                            <img style="padding:20px; width:15%" src="http://tutorialesatualcance.com/tienda/icon-email.png">
+
+                                            <h3 style="font-weight:100; color:#999">INCIDENCIA '.$data["id_incidencia"].' HA SIDO APROBADA</h3>
+
+                                            <hr style="border:1px solid #ccc; width:80%">
+
+                                            <h4 style="font-weight:100; color:#999; padding:0 20px">En el siguiente link puede descargar la hoja de servicio</h4>
+
+                                            <a href="' . $url . $tipo .$data["id_incidencia"] . '" target="_blank" style="text-decoration:none">
+
+
+                                            </a>
+
+                                            <br>
+
+                                            <hr style="border:1px solid #ccc; width:80%">
+
+                                            <h5 style="font-weight:100; color:#999">Si no se inscribió en esta cuenta, puede ignorar este correo electrónico y la cuenta se eliminará.</h5>
+
+                                        </center>
+
+                                    </div>
+                                </div>'
+        );
+
+        $envio = $mail->Send();
+
+        if (!$envio) {
+
+            echo json_encode(array(
+                "statusCode" => 400,
+                "error" => false,
+                "mensaje" =>"¡Ha ocurrido un problema enviando verificación de correo electrónico a " . $data["email"] . $mail->ErrorInfo . "!"
+            ));
+
+        } else {
+
+            echo json_encode(array(
+                "statusCode" => 200,
+                "error" => false,
+                "mensaje" =>"¡Excelente trabajo, el email " . $data["nombre"] . ", se ha enviado correctamente",
+            ));
+
+
+        }
+
     }
 
 	/*=============================================

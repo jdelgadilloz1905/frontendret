@@ -18,58 +18,58 @@ class imprimirIncidencia{
 
     public function traerImpresionIncidencia(){
 
-    //TRAEMOS LA INFORMACIÓN DE LA VENTA
+        //TRAEMOS LA INFORMACIÓN DE LA VENTA
 
-    $itemIncidencia = "id";
-    $valorIncidencia = $this->codigo;
+        $itemIncidencia = "id";
+        $valorIncidencia = $this->codigo;
 
-    $incidencia = ControladorIncidencia::ctrMostrarIncidencias($itemIncidencia, $valorIncidencia);
+        $incidencia = ControladorIncidencia::ctrMostrarIncidencias($itemIncidencia, $valorIncidencia);
 
-    $listaCliente = ControladorClientes::ctrMostrarClientes(null,null);
+        $listaCliente = ControladorClientes::ctrMostrarClientes(null,null);
 
-    $listaVendedor = ControladorUsuarios::ctrListaUsuariosFiltro("perfil","Tecnico");
+        $listaVendedor = ControladorUsuarios::ctrListaUsuariosFiltro("perfil","Tecnico");
 
-    //Busco el usuario quien creo la incidencia
-    $datosUsuario = ControladorUsuarios::ctrMostrarUsuarios("id",$incidencia["id_usuario"]);
+        //Busco el usuario quien creo la incidencia
+        $datosUsuario = ControladorUsuarios::ctrMostrarUsuarios("id",$incidencia["id_usuario"]);
 
-    //Busco los datos del cliente
+        //Busco los datos del cliente
 
-    $datosCliente = ControladorClientes::ctrMostrarClientes("id",$incidencia["id_cliente"]);
+        $datosCliente = ControladorClientes::ctrMostrarClientes("id",$incidencia["id_cliente"]);
 
-    //Busco los datos del tecnico
+        //Busco los datos del tecnico
 
-    $datosTecnico = ControladorUsuarios::ctrMostrarUsuarios("id",$incidencia["id_tecnico"]);
+        $datosTecnico = ControladorUsuarios::ctrMostrarUsuarios("id",$incidencia["id_tecnico"]);
 
 
-    $id_incidencia = str_pad($valorIncidencia, 6, "0", STR_PAD_LEFT);
+        $id_incidencia = str_pad($valorIncidencia, 6, "0", STR_PAD_LEFT);
 
-    switch($incidencia["tipo_servicio"]){
-        case "plomeria":
-            $tipoServicio = "Plomeria";
-            break;
-        case "recogido-de-liquido":
-            $tipoServicio = "Recogido de liquido";
-            break;
-        case "limpieza-de-campana":
-            $tipoServicio = "Limpieza de campana";
-            break;
-    }
+        switch($incidencia["tipo_servicio"]){
+            case "plomeria":
+                $tipoServicio = "Plomeria";
+                break;
+            case "recogido-de-liquido":
+                $tipoServicio = "Recogido de liquido";
+                break;
+            case "limpieza-de-campana":
+                $tipoServicio = "Limpieza de campana";
+                break;
+        }
 
-    $nombreTecnico = ucwords($datosTecnico["nombre"]);
+        $nombreTecnico = ucwords($datosTecnico["nombre"]);
 
-    //REQUERIMOS LA CLASE TCPDF
+        //REQUERIMOS LA CLASE TCPDF
 
-    require_once('tcpdf_include.php');
+        require_once('tcpdf_include.php');
 
-    $pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
+        $pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
 
-    $pdf->startPageGroup();
+        $pdf->startPageGroup();
 
-    $pdf->AddPage();
+        $pdf->AddPage();
 
-    // ---------------------------------------------------------
+        // ---------------------------------------------------------
 
-    $bloque1 = <<<EOF
+        $bloque1 = <<<EOF
 
         <table>
             <tr>
@@ -104,11 +104,11 @@ class imprimirIncidencia{
 EOF;
 
 
-    $pdf->writeHTML($bloque1, false, false, false, false, '');
+        $pdf->writeHTML($bloque1, false, false, false, false, '');
 
-    // ---------------------------------------------------------
+        // ---------------------------------------------------------
 
-    // ---------------------------------------------------------
+        // ---------------------------------------------------------
 
         $bloque2 = <<<EOF
 
@@ -173,10 +173,10 @@ EOF;
 
         $pdf->writeHTML($bloque2, false, false, false, false, '');
 
-    // ---------------------------------------------------------
-    //SALIDA DEL ARCHIVO
+        // ---------------------------------------------------------
+        //SALIDA DEL ARCHIVO
 
-    $pdf->Output('incidencia'.$_GET["codigo"].'.pdf');
+        $pdf->Output('incidencia'.$_GET["codigo"].'.pdf');
 
     }
 
@@ -186,5 +186,5 @@ $a = new imprimirIncidencia();
 $a -> codigo = $_GET["codigo"];
 $a -> traerImpresionIncidencia();
 
- ?>
+?>
  
