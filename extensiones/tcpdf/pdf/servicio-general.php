@@ -383,7 +383,7 @@ EOF;
 
                 <td style="border: 1px solid #666; background-color:white;  width:270px">
 
-                        <label>Supervisor de turno: <strong>Miguel Velazquez</strong> </label>
+                        <label>Supervisor de turno: <strong>Miguel Velazquez Ramirez</strong> </label>
                     <br>
                         <label>Técnico de Servicio: <strong>$datosTecnico[nombre]</strong> </label>
                     <br>
@@ -417,7 +417,7 @@ EOF;
 
 
             <tr>
-                <td style="width:180px">Firma Generador: <strong><img src="$url/vistas/img/firmas/$idIncidencia.png" style="height: 100px; width: 100px;"></strong></td>
+                <td style="width:180px">Firma Cliente: <strong><img src="$url/vistas/img/firmas/$idIncidencia.png" style="height: 100px; width: 100px;"></strong></td>
 
                 <td style="width:180px">Titulo: <strong></strong></td>
 

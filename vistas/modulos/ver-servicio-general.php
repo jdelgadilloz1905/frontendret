@@ -540,7 +540,7 @@ PÁGINA DE USUARIOS
                                                 <div class="form-group row">
                                                     <label class="control-label text-right col-md-5">Supervisor de Turno</label>
                                                     <div class="col-md-7">
-                                                        <p class="form-control-static"> <?php echo "Miguel Velazquez" //$datosUsuario["nombre"] ?> </p>
+                                                        <p class="form-control-static"> <?php echo "Miguel Velazquez Ramirez" //$datosUsuario["nombre"] ?> </p>
                                                     </div>
                                                 </div>
                                             </div>

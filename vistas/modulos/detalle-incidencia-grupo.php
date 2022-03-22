@@ -159,7 +159,7 @@ if($_SESSION["perfil"]=="Administrador"){
                                 <div class="col-md-2 mt-3">
                                     <label class="pl-2" for=""> Fecha Visita</label>
                                     <div class="input-group">
-                                        <input type="text" class="form-control mydatepicker" value="<?php echo $incidencia["fecha_visita"] ?>" id="mdate" name="editFechaVisita" <?php echo $read ?> required>
+                                        <input type="text" class="form-control mydatepicker" value="<?php echo date("m-d-Y", strtotime($incidencia["fecha_visita"])) ?>" id="mdate" name="editFechaVisita" <?php echo $read ?> required>
                                     </div>
                                 </div>
                             </div>

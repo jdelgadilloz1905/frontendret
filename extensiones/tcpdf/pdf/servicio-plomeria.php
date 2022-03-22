@@ -413,7 +413,7 @@ EOF;
                 <td style="text-align:center"><h3>SERVICIO REALIZADO POR</h3></td>
             </tr>
             <tr>
-                <td style="width:270px">Supervisor de Turno: <strong>Miguel Velazquez</strong></td>
+                <td style="width:270px">Supervisor de Turno: <strong>Miguel Velazquez Ramirez</strong></td>
 
                 <td style="width:270px">Técnico de Servicio: <strong>$datosTecnico[nombre]</strong></td>
             </tr>
