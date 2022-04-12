@@ -182,7 +182,7 @@ PÁGINA DE USUARIOS
 
                                             $estatus_incidencia ="<span class='table-remove'><button type='button' class='btn ".$colorEstado." btn-sm my-0' >".$textoEstado."</button></span>";
 
-                                            $selector = '<button type="button"  id_incidencia = "'.$value["id"].'" class="btn btn-success btn-sm marcar" data-toggle="button" aria-pressed="false" style="height: 26px !important;'.$claseBoton.'" >
+                                            $selector = '<button type="button"  id_incidencia = "'.$value["id"].'" class="btn btn-success btn-sm marcar" data-toggle="button" aria-pressed="false" style="height: 26px !important;width:26px!important;padding:0!important;'.$claseBoton.'" >
                                                     <i class="ti-check text" aria-hidden="true"></i>
                                                     <span class="text"></span>
                                                     <i class="ti-check text-active" aria-hidden="true"></i>
@@ -336,7 +336,7 @@ PÁGINA DE USUARIOS
 
                                             $estatus_incidencia ="<span class='table-remove'><button type='button' class='btn ".$colorEstado." btn-sm my-0' >".$textoEstado."</button></span>";
 
-                                            $selector = '<button type="button"  id_incidencia = "'.$value["id"].'" class="btn btn-success btn-sm marcar" data-toggle="button" aria-pressed="false" style="height: 26px !important;'.$claseBoton.'" >
+                                            $selector = '<button type="button"  id_incidencia = "'.$value["id"].'" class="btn btn-success btn-sm marcar" data-toggle="button" aria-pressed="false" style="height: 26px !important;width:26px!important;padding:0!important;'.$claseBoton.'" >
                                                     <i class="ti-check text" aria-hidden="true"></i>
                                                     <span class="text"></span>
                                                     <i class="ti-check text-active" aria-hidden="true"></i>
@@ -491,7 +491,7 @@ PÁGINA DE USUARIOS
 
                                             $estatus_incidencia ="<span class='table-remove'><button type='button' class='btn ".$colorEstado." btn-sm my-0' >".$textoEstado."</button></span>";
 
-                                            $selector = '<button type="button"  id_incidencia = "'.$value["id"].'" class="btn btn-success btn-sm marcarAprobar" data-toggle="button" aria-pressed="false" style="height: 26px !important;" >
+                                            $selector = '<button type="button"  id_incidencia = "'.$value["id"].'" class="btn btn-success btn-sm marcarAprobar" data-toggle="button" aria-pressed="false" style="height: 26px!important;width:26px!important;padding:0!important;" >
                                                     <i class="ti-check text" aria-hidden="true"></i>
                                                     <span class="text"></span>
                                                     <i class="ti-check text-active" aria-hidden="true"></i>
@@ -645,7 +645,7 @@ PÁGINA DE USUARIOS
 
                                             $estatus_incidencia ="<span class='table-remove'><button type='button' class='btn ".$colorEstado." btn-sm my-0' >".$textoEstado."</button></span>";
 
-                                            $selector = '<button type="button"  id_incidencia = "'.$value["id"].'" class="btn btn-success btn-sm marcarAprobar" data-toggle="button" aria-pressed="false" style="height: 26px !important;" >
+                                            $selector = '<button type="button"  id_incidencia = "'.$value["id"].'" class="btn btn-success btn-sm marcarAprobar" data-toggle="button" aria-pressed="false" style="height: 26px!important;width:26px!important;padding:0!important;" >
                                                     <i class="ti-check text" aria-hidden="true"></i>
                                                     <span class="text"></span>
                                                     <i class="ti-check text-active" aria-hidden="true"></i>
