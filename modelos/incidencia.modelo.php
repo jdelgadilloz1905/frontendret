@@ -664,7 +664,7 @@ class ModeloIncidencia{
 													water_jetter = :water_jetter, tanktruck = :tanktruck, otros3 = :otros3, coverAll = :coverAll, guantes = :guantes, capacete = :capacete, equipo_espacio_confinado = :equipo_espacio_confinado,
 													comentario = :comentario, desechos_liquidos = :desechos_liquidos, aguas_residuales = :aguas_residuales, aceites_vegetales = :aceites_vegetales, otros4 = :otros4,
 													total_desperciado = :total_desperciado, tecnico_adicional = :tecnico_adicional, limpieza_tuberias_num = :limpieza_tuberias_num,planta_tratamiento=:planta_tratamiento , otra_facilidad= :otra_facilidad,
-													otros5 = :otros5
+													otros5 = :otros5, titulo = :titulo, nombre_letra_molde = :nombre_letra_molde
 											  WHERE servicio_general.id_incidencia = :id_incidencia");
 
 		$stmt->bindParam(":id_incidencia", $datos["id_incidencia"], PDO::PARAM_INT);
@@ -715,6 +715,8 @@ class ModeloIncidencia{
 		$stmt->bindParam(":planta_tratamiento", $datos["planta_tratamiento"], PDO::PARAM_STR);
 		$stmt->bindParam(":otra_facilidad", $datos["otra_facilidad"], PDO::PARAM_STR);
 		$stmt->bindParam(":otros5", $datos["otros5"], PDO::PARAM_STR);
+        $stmt->bindParam(":titulo", $datos["titulo"], PDO::PARAM_STR);
+        $stmt->bindParam(":nombre_letra_molde", $datos["nombre_letra_molde"], PDO::PARAM_STR);
 
 		if($stmt->execute()){
 
@@ -881,13 +883,15 @@ class ModeloIncidencia{
 														 estacion_bombas,tanque_recibidor,tanque_aceites,otros1,interior,exterior,interior_exterior,limpieza_derrame_liquido,limpieza_manhole,
 														 limpieza_lift_station,limpieza_tuberias,limpieza_registros_desagues,limpieza_registros_num,limpieza_desagues_num,remocion_acarreo,remocion_grasas,
 														 otros2,vacuum,vacuumNum,vacuum_portable,water_jetter,tanktruck,otros3,coverAll,guantes,capacete,equipo_espacio_confinado,comentario,desechos_liquidos,
-														 aguas_residuales,aceites_vegetales,otros4,total_desperciado,tecnico_adicional,hora_entrada,hora_salida,limpieza_tuberias_num,planta_tratamiento,otra_facilidad, otros5)
+														 aguas_residuales,aceites_vegetales,otros4,total_desperciado,tecnico_adicional,hora_entrada,hora_salida,limpieza_tuberias_num,planta_tratamiento,otra_facilidad, otros5, 
+														 titulo,nombre_letra_molde)
 													  VALUES
 													  	(:id_incidencia,:vaciado,:vaciado_parcial,:otros,:limpeza_regular,:inspeccion,:interceptor_aceite,:tanque_almacenamiento,:pozo_septico,
 													  	:estacion_bombas,:tanque_recibidor,:tanque_aceites,:otros1,:interior,:exterior,:interior_exterior,:limpieza_derrame_liquido,:limpieza_manhole,
 													  	:limpieza_lift_station,:limpieza_tuberias,:limpieza_registros_desagues,:limpieza_registros_num,:limpieza_desagues_num,:remocion_acarreo,:remocion_grasas,
 													  	:otros2,:vacuum,:vacuumNum,:vacuum_portable,:water_jetter,:tanktruck,:otros3,:coverAll,:guantes,:capacete,:equipo_espacio_confinado,:comentario,:desechos_liquidos,
-													  	:aguas_residuales,:aceites_vegetales,:otros4,:total_desperciado,:tecnico_adicional,:hora_entrada,:hora_salida,:limpieza_tuberias_num,:planta_tratamiento,:otra_facilidad, :otros5)");
+													  	:aguas_residuales,:aceites_vegetales,:otros4,:total_desperciado,:tecnico_adicional,:hora_entrada,:hora_salida,:limpieza_tuberias_num,:planta_tratamiento,:otra_facilidad, :otros5,
+													  	:titulo,:nombre_letra_molde)");
 
 		$stmt->bindParam(":id_incidencia", $datos["id_incidencia"], PDO::PARAM_INT);
 		$stmt->bindParam(":vaciado", $datos["vaciado"], PDO::PARAM_STR);
@@ -938,6 +942,8 @@ class ModeloIncidencia{
 		$stmt->bindParam(":planta_tratamiento", $datos["planta_tratamiento"], PDO::PARAM_STR);
 		$stmt->bindParam(":otra_facilidad", $datos["otra_facilidad"], PDO::PARAM_STR);
 		$stmt->bindParam(":otros5", $datos["otros5"], PDO::PARAM_STR);
+        $stmt->bindParam(":titulo", $datos["titulo"], PDO::PARAM_STR);
+        $stmt->bindParam(":nombre_letra_molde", $datos["nombre_letra_molde"], PDO::PARAM_STR);
 
 
 		if($stmt->execute()){

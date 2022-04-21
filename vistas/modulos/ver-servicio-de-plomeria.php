@@ -586,7 +586,7 @@ PÁGINA DE USUARIOS
 
                                     <div class="col-md-6">
                                         <div class="form-group row">
-                                            <label class="control-label text-right col-md-5 m-t-15">Firma Cliente:</label>
+                                            <label class="control-label text-right col-md-5 m-t-15">Firma del Cliente:</label>
                                             <div class="col-md-7">
                                                 <img src="<?php echo $url.'vistas/img/firmas/'.$id_incidencia.'.png' ?>" style="height: 100px; width: 100px;">
                                             </div>

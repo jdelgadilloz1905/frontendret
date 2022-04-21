@@ -84,7 +84,7 @@ PÁGINA DE USUARIOS
                                         <div class="form-group row">
                                             <label class="control-label text-right col-md-3">Grupo:</label>
                                             <div class="col-md-9">
-                                                <p class="form-control-static"> <?php echo $datosCliente["alias"] ?> </p>
+                                                <p class="form-control-static"> <?php echo $datosCliente["alias"] ."-". $datosCliente["localizador"] ."-".$datosCliente["documento"]?> </p>
                                             </div>
                                         </div>
                                     </div>
@@ -536,6 +536,7 @@ PÁGINA DE USUARIOS
                                                         </label>
                                                         <label style="margin-left: 0px" for=""> gals.</label>
                                                     </div>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -549,7 +550,7 @@ PÁGINA DE USUARIOS
                                                 <div class="form-group row">
                                                     <label class="control-label text-right col-md-5">Supervisor de Turno</label>
                                                     <div class="col-md-7">
-                                                        <p class="form-control-static"> <?php echo "Miguel Velazquez"; //$datosUsuario["nombre"] ?> </p>
+                                                        <p class="form-control-static"> <?php echo "Miguel Velazquez Ramirez"; //$datosUsuario["nombre"] ?> </p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -602,6 +603,33 @@ PÁGINA DE USUARIOS
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="col-md-12">
+
+                                                <div class="form-group row">
+                                                    <label class="control-label text-right col-md-5">Nombre Letra a Molde:</label>
+                                                    <div class="col-md-7">
+                                                        <input class="form-control" type="text" name="nombreLetraMolde">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="col-md-12">
+
+                                                <div class="form-group row">
+                                                    <label class="control-label text-right col-md-5">Titulo:</label>
+                                                    <div class="col-md-7">
+                                                        <input class="form-control" type="text" name="titulo">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row">
+
+
+                                            </div>
+
 
                                             <div class="col-md-12">
                                                 <div class="form-group row">
@@ -623,6 +651,7 @@ PÁGINA DE USUARIOS
                                         </div>
                                     </div>
                                 </div>
+
 
                                 <div class="row">
                                     <div class="col-md-12">

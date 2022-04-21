@@ -419,7 +419,7 @@ EOF;
             <tr>
                 <td style="width:180px">Firma Cliente: <strong><img src="$url/vistas/img/firmas/$idIncidencia.png" style="height: 100px; width: 100px;"></strong></td>
 
-                <td style="width:180px">Titulo: <strong></strong></td>
+                <td style="width:180px">Titulo: <strong>$servicio[titulo]</strong></td>
 
                 <td style="width:180px">Fecha: <strong>$incidencia[fecha_visita]</strong></td>
 
@@ -427,7 +427,7 @@ EOF;
             </tr>
             <br>
             <tr>
-                <td style="width:270px">Nombre: <strong></strong></td>
+                <td style="width:270px">Nombre: <strong>$servicio[nombre_letra_molde]</strong></td>
 
             </tr>
 

@@ -1431,7 +1431,9 @@ class ControladorIncidencia{
 					"hora_salida" =>$_POST["horaSalida"],
 					"planta_tratamiento"=>(isset($_POST["planta_tratamiento"])) ? $_POST["planta_tratamiento"] : "",
 					"otra_facilidad" =>(isset($_POST["otra_facilidad"])) ? $_POST["otra_facilidad"] : "",
-					"otros5" => (isset($_POST["otros5"])) ? $_POST["otros5"] : ""
+					"otros5" => (isset($_POST["otros5"])) ? $_POST["otros5"] : "",
+                    "titulo" => (isset($_POST["titulo"])) ? $_POST["titulo"] : "",
+                    "nombre_letra_molde" => (isset($_POST["nombreLetraMolde"])) ? $_POST["nombreLetraMolde"] : ""
 				);
 
 				if(isset($respuesta["id_incidencia"])){

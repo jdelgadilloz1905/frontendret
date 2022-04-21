@@ -20,8 +20,6 @@ $listaVendedor = ControladorUsuarios::ctrListaUsuariosFiltro("perfil","Tecnico")
 //BUSCO EL SERVICIO DE LA INCIDENCIA
 
 $servicio = ControladorIncidencia::ctrMostrarServicio("servicio_general","id_incidencia",$id_incidencia);
-
-
 ?>
 
 <!--=====================================
@@ -564,7 +562,7 @@ PÁGINA DE USUARIOS
                                                 <div class="form-group row">
                                                     <label class="control-label text-right col-md-5">Hora Salida</label>
                                                     <div class="col-md-7">
-                                                        <input class="form-control" type="time" name="horaSalida" required value="<?php echo $incidencia["hora_fin"] ?>" disabled >
+                                                        <input class="form-control" type="time" name="horaSalida" value="<?php echo $incidencia["hora_fin"] ?>" disabled >
                                                     </div>
                                                 </div>
                                             </div>
@@ -596,6 +594,29 @@ PÁGINA DE USUARIOS
                                                         </div>
                                                     </div>
                                                 </div>
+                                            </div>
+
+                                            <div class="col-md-12">
+
+                                                <div class="form-group row">
+                                                    <label class="control-label text-right col-md-5">Nombre Letra a Molde:</label>
+                                                    <div class="col-md-7">
+
+                                                        <input class="form-control" type="text" name="nombreLetraMolde"  value="<?php echo $servicio["nombre_letra_molde"] ?>" disabled >
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="col-md-12">
+
+                                                <div class="form-group row">
+                                                    <label class="control-label text-right col-md-5">Titulo:</label>
+                                                    <div class="col-md-7">
+                                                        <input class="form-control" type="text" name="titulo" value="<?php echo $servicio["titulo"] ?>" disabled >
+                                                    </div>
+                                                </div>
+
                                             </div>
 
                                         </div>
