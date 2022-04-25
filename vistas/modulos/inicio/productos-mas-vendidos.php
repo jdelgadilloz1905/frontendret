@@ -21,9 +21,9 @@ PRODUCTOS MÁS VENDIDOS
     <div class="card">
         <div class="card-body">
             <h4 class="card-title">Productos más vendidos</h4>
-            <div class="flot-chart">
-                <div class="flot-chart-content" id="flot-pie-chart"></div>
-            </div>
+<!--            <div class="flot-chart">-->
+<!--                <div class="flot-chart-content" id="flot-pie-chart"></div>-->
+<!--            </div>-->
             <ul class="feeds">
                 <?php
 
