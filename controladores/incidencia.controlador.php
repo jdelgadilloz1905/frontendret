@@ -399,7 +399,7 @@ class ControladorIncidencia{
 
                     echo'<script>
 
-				localStorage.removeItem("localMarcaIncidencia");
+				localStorage.removeItem("localMarcaAprobarServicio");
 
 				swal({
 					  type: "success",
@@ -488,7 +488,7 @@ class ControladorIncidencia{
 
                                             <a href="' . $url . $tipo .$data["id_incidencia"] . '" target="_blank" style="text-decoration:none">
 
-
+                                                Imprimir
                                             </a>
 
                                             <br>
