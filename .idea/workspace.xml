@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9623ab11-5bb3-477d-a56d-fe373b2bf608" name="Default" comment="modificaciones en el inicio, categoria">
+    <list default="true" id="9623ab11-5bb3-477d-a56d-fe373b2bf608" name="Default" comment="uodate controller incidencias, email de aprobacion">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controladores/incidencia.controlador.php" beforeDir="false" afterPath="$PROJECT_DIR$/controladores/incidencia.controlador.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modelos/conexion.php" beforeDir="false" afterPath="$PROJECT_DIR$/modelos/conexion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modelos/incidencia.modelo.php" beforeDir="false" afterPath="$PROJECT_DIR$/modelos/incidencia.modelo.php" afterDir="false" />
     </list>
     <ignored path="RET.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,22 +40,15 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vistas/modulos/admin-incidencia.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="868" column="57" selection-start-line="868" selection-start-column="57" selection-end-line="868" selection-end-column="57" />
-              <folding>
-                <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controladores/incidencia.controlador.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="399" column="33" lean-forward="true" selection-start-line="399" selection-start-column="33" selection-end-line="399" selection-end-column="33" />
+            <state relative-caret-position="117">
+              <caret line="464" lean-forward="true" selection-end-line="1719" selection-end-column="1" />
+              <folding>
+                <element signature="n#style#0;n#h3#0;n#center#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#2;n#center#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#3;n#center#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -63,8 +56,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/modelos/incidencia.modelo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="1111" column="5" lean-forward="true" selection-start-line="1111" selection-start-column="5" selection-end-line="1111" selection-end-column="5" />
+            <state relative-caret-position="120">
+              <caret line="1101" column="14" lean-forward="true" selection-start-line="1101" selection-start-column="14" selection-end-line="1101" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -80,9 +73,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Fecha Visita</find>
-      <find>genera</find>
-      <find>Miguel Velazquez</find>
       <find>Firma</find>
       <find>Grupo</find>
       <find>nombre_letra_molde</find>
@@ -110,11 +100,15 @@
       <find>aprobarIncidencias</find>
       <find>Aprobación</find>
       <find>En el siguiente link puede descargar la hoja de servicio</find>
+      <find>fecha</find>
+      <find>fecha_res</find>
+      <find>ctrEnviarEmailAprobacion</find>
     </findStrings>
     <dirStrings>
       <dir>C:\xampp\htdocs\frontendret\controladores</dir>
       <dir>C:\xampp\htdocs\frontendret</dir>
       <dir>C:\xampp\htdocs\frontendret\vistas</dir>
+      <dir>C:\xampp\htdocs\frontendret\vistas\modulos</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -146,7 +140,6 @@
         <option value="$PROJECT_DIR$/modelos/ruta.php" />
         <option value="$PROJECT_DIR$/controladores/clientes.controlador.php" />
         <option value="&lt;924e40af-ee08-4b6a-ba32-353b4885b79d&gt;/modelos/ruta.php" />
-        <option value="&lt;924e40af-ee08-4b6a-ba32-353b4885b79d&gt;/modelos/incidencia.modelo.php" />
         <option value="&lt;924e40af-ee08-4b6a-ba32-353b4885b79d&gt;/index.php" />
         <option value="&lt;924e40af-ee08-4b6a-ba32-353b4885b79d&gt;/prueba.php" />
         <option value="&lt;924e40af-ee08-4b6a-ba32-353b4885b79d&gt;/prueba.html" />
@@ -159,7 +152,6 @@
         <option value="&lt;924e40af-ee08-4b6a-ba32-353b4885b79d&gt;/vistas/modulos/ver-servicio-de-plomeria.php" />
         <option value="&lt;924e40af-ee08-4b6a-ba32-353b4885b79d&gt;/vistas/modulos/admin-incidencia.php" />
         <option value="&lt;924e40af-ee08-4b6a-ba32-353b4885b79d&gt;/vistas/css/style.css" />
-        <option value="$PROJECT_DIR$/modelos/incidencia.modelo.php" />
         <option value="$PROJECT_DIR$/vistas/modulos/servicio-general.php" />
         <option value="$PROJECT_DIR$/vistas/modulos/ver-servicio-general.php" />
         <option value="$PROJECT_DIR$/extensiones/tcpdf/pdf/servicio-general.php" />
@@ -172,8 +164,10 @@
         <option value="$PROJECT_DIR$/controladores/categorias.controlador.php" />
         <option value="&lt;924e40af-ee08-4b6a-ba32-353b4885b79d&gt;/controladores/categorias.controlador.php" />
         <option value="$PROJECT_DIR$/modelos/conexion.php" />
+        <option value="$PROJECT_DIR$/modelos/incidencia.modelo.php" />
         <option value="$PROJECT_DIR$/controladores/incidencia.controlador.php" />
         <option value="&lt;924e40af-ee08-4b6a-ba32-353b4885b79d&gt;/controladores/incidencia.controlador.php" />
+        <option value="&lt;924e40af-ee08-4b6a-ba32-353b4885b79d&gt;/modelos/incidencia.modelo.php" />
       </list>
     </option>
   </component>
@@ -201,10 +195,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="47" />
-    <option name="y" value="16" />
-    <option name="width" value="1616" />
-    <option name="height" value="876" />
+    <option name="x" value="-4" />
+    <option name="y" value="-4" />
+    <option name="width" value="1448" />
+    <option name="height" value="880" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -212,6 +206,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -222,19 +217,17 @@
             <path>
               <item name="RET" type="b2602c69:ProjectViewProjectNode" />
               <item name="frontendret" type="462c0819:PsiDirectoryNode" />
-              <item name="vistas" type="462c0819:PsiDirectoryNode" />
+              <item name="controladores" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RET" type="b2602c69:ProjectViewProjectNode" />
               <item name="frontendret" type="462c0819:PsiDirectoryNode" />
               <item name="vistas" type="462c0819:PsiDirectoryNode" />
-              <item name="modulos" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -311,7 +304,9 @@
       <workItem from="1649336663768" duration="1833000" />
       <workItem from="1650546546263" duration="7020000" />
       <workItem from="1650632279748" duration="4151000" />
-      <workItem from="1651515487518" duration="3437000" />
+      <workItem from="1651515487518" duration="4853000" />
+      <workItem from="1651766296823" duration="856000" />
+      <workItem from="1651851622473" duration="2521000" />
     </task>
     <task id="LOCAL-00001" summary="envio de email aprobado">
       <created>1639671498436</created>
@@ -334,17 +329,24 @@
       <option name="project" value="LOCAL" />
       <updated>1650891605556</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="uodate controller incidencias, email de aprobacion">
+      <created>1651524087714</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1651524087714</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67743000" />
+    <option name="totallyTimeSpent" value="72536000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12793177" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.13006397" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -383,7 +385,8 @@
     <MESSAGE value="envio de email aprobado" />
     <MESSAGE value="modificaciones" />
     <MESSAGE value="modificaciones en el inicio, categoria" />
-    <option name="LAST_COMMIT_MESSAGE" value="modificaciones en el inicio, categoria" />
+    <MESSAGE value="uodate controller incidencias, email de aprobacion" />
+    <option name="LAST_COMMIT_MESSAGE" value="uodate controller incidencias, email de aprobacion" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/vistas/modulos/proveedores.php">
@@ -438,22 +441,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="471" column="34" selection-start-line="471" selection-start-column="34" selection-end-line="471" selection-end-column="34" />
-          <folding>
-            <marker date="1568129317182" expanded="true" signature="2532:3298" placeholder="..." />
-            <marker date="1568129317182" expanded="true" signature="3051:3298" placeholder="..." />
-            <marker date="1568129317182" expanded="true" signature="3098:3298" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vistas/modulos/panel-eventos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <marker date="1568129314175" expanded="true" signature="22844:22863" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/vistas/js/usuarios.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -487,7 +479,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="140" column="16" selection-start-line="140" selection-start-column="16" selection-end-line="140" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -748,15 +739,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controladores/incidencia.controlador.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="399" column="33" lean-forward="true" selection-start-line="399" selection-start-column="33" selection-end-line="399" selection-end-column="33" />
+        <state relative-caret-position="117">
+          <caret line="464" lean-forward="true" selection-end-line="1719" selection-end-column="1" />
+          <folding>
+            <element signature="n#style#0;n#h3#0;n#center#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#2;n#center#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#3;n#center#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modelos/incidencia.modelo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="1111" column="5" lean-forward="true" selection-start-line="1111" selection-start-column="5" selection-end-line="1111" selection-end-column="5" />
+        <state relative-caret-position="120">
+          <caret line="1101" column="14" lean-forward="true" selection-start-line="1101" selection-start-column="14" selection-end-line="1101" selection-end-column="14" />
         </state>
       </provider>
     </entry>

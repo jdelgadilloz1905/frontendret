@@ -479,8 +479,14 @@ class ControladorIncidencia{
                                         <center>
 
                                             <img style="padding:20px; width:15%" src="http://tutorialesatualcance.com/tienda/icon-email.png">
+                                            
+                                            <h3 style="font-weight:100; color:#999">SU SERVICIO HA SIDO APROBADO</h3>
 
-                                            <h3 style="font-weight:100; color:#999">INCIDENCIA '.$data["id_incidencia"].' HA SIDO APROBADA</h3>
+                                            <h3 style="font-weight:100; color:#999">NRO: '.$data["id_incidencia"].' </h3>
+                                            
+                                            <h3 style="font-weight:100; color:#999">TIPO: '.str_replace("-"," ",$data["tipo_servicio"]).' </h3>
+                                            
+                                            <h3 style="font-weight:100; color:#999">FECHA: '.date("m-d-Y", strtotime($data["fecha_resuelto"])).' </h3>
 
                                             <hr style="border:1px solid #ccc; width:80%">
 
