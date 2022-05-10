@@ -16,7 +16,8 @@ class ControladorGrupo{
 
 				$datos = array(
 				    "nombreGrupo" =>$_POST["nuevoGrupo"],
-                    "nombreAlias" =>$_POST["nuevoAlias"]
+                    "nombreAlias" =>$_POST["nuevoAlias"],
+                    "nombreEmail" =>$_POST["nuevoEmail"]
                  );
 
 				$respuesta = ModeloGrupo::mdlIngresarNuevoGrupo($tabla, $datos);
@@ -98,7 +99,8 @@ class ControladorGrupo{
 
 				$datos = array("nombre"=>$_POST["editarGrupoCliente"],
 							   "id"=>$_POST["idGrupoCliente"],
-                               "alias"=>$_POST["editarAlias"]
+                               "alias"=>$_POST["editarAlias"],
+                               "email"=>$_POST["editarEmail"]
                 );
 
 				$respuesta = ModeloGrupo::mdlEditarGrupoCliente($tabla, $datos);
@@ -162,7 +164,7 @@ class ControladorGrupo{
 
 			//SE CONSULTA SI NO ESTA ASOCIADO EL GRUPO A LOS CLIENTE
 			
-			$resultado = ModeloClientes::mdlMostrarClientes("cliente","id_grupo",$_GET["idGrupoCliente"]);
+			$resultado = ModeloClientes::mdlMostrarClientes("clientes","id_grupo",$_GET["idGrupoCliente"]);
 			
 			if(isset($resultado["id"]) && !empty($resultado["id"])){
 

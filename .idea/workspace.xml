@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9623ab11-5bb3-477d-a56d-fe373b2bf608" name="Default" comment="uodate controller incidencias, email de aprobacion">
+    <list default="true" id="9623ab11-5bb3-477d-a56d-fe373b2bf608" name="Default" comment="update email de aprobado servicio">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controladores/grupo.controlador.php" beforeDir="false" afterPath="$PROJECT_DIR$/controladores/grupo.controlador.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controladores/incidencia.controlador.php" beforeDir="false" afterPath="$PROJECT_DIR$/controladores/incidencia.controlador.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modelos/grupo.modelo.php" beforeDir="false" afterPath="$PROJECT_DIR$/modelos/grupo.modelo.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modelos/incidencia.modelo.php" beforeDir="false" afterPath="$PROJECT_DIR$/modelos/incidencia.modelo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vistas/js/grupo-cliente.js" beforeDir="false" afterPath="$PROJECT_DIR$/vistas/js/grupo-cliente.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vistas/modulos/grupo-cliente.php" beforeDir="false" afterPath="$PROJECT_DIR$/vistas/modulos/grupo-cliente.php" afterDir="false" />
     </list>
     <ignored path="RET.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,26 +42,27 @@
     <favorites_list name="RET" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controladores/incidencia.controlador.php">
+        <entry file="file://$PROJECT_DIR$/vistas/modulos/grupo-cliente.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="464" lean-forward="true" selection-end-line="1719" selection-end-column="1" />
+            <state relative-caret-position="80">
+              <caret line="246" column="18" lean-forward="true" selection-end-line="292" />
               <folding>
-                <element signature="n#style#0;n#h3#0;n#center#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h3#2;n#center#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h3#3;n#center#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/modelos/incidencia.modelo.php">
+      <file pinned="true" current-in-tab="true">
+        <entry file="remoteDeploymentFS://&lt;924e40af-ee08-4b6a-ba32-353b4885b79d&gt;/vistas/modulos/grupo-cliente.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="1101" column="14" lean-forward="true" selection-start-line="1101" selection-start-column="14" selection-end-line="1101" selection-end-column="14" />
+            <state relative-caret-position="922">
+              <caret line="292" lean-forward="true" selection-start-line="292" selection-end-line="292" />
+              <folding>
+                <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -73,19 +78,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Firma</find>
-      <find>Grupo</find>
-      <find>nombre_letra_molde</find>
-      <find>nombreLetraMolde</find>
-      <find>Titulo</find>
-      <find>Nombre Letra a Molde:</find>
-      <find>Adicional</find>
-      <find>comentar</find>
-      <find>tal desperd</find>
-      <find>ombre Letra a Molde:</find>
-      <find>$servicio</find>
-      <find>titulo</find>
-      <find>mdlRegistrarServicioIncidencia</find>
       <find>grupo</find>
       <find>mdlBorrarCategoria</find>
       <find>ctrBorrarCategoria</find>
@@ -102,13 +94,26 @@
       <find>En el siguiente link puede descargar la hoja de servicio</find>
       <find>fecha</find>
       <find>fecha_res</find>
+      <find>Agregar Grupo Cliente</find>
+      <find>Agregar cliente</find>
+      <find>actualiza</find>
+      <find>Acciones</find>
+      <find>ctrCrearGrupoCliente</find>
+      <find>nuevoEmail</find>
+      <find>actu</find>
+      <find>editarEmail</find>
+      <find>email</find>
+      <find>idGrupoClienteMostrar</find>
+      <find>$id_incidencia</find>
       <find>ctrEnviarEmailAprobacion</find>
+      <find>console</find>
+      <find>var_</find>
     </findStrings>
     <dirStrings>
       <dir>C:\xampp\htdocs\frontendret\controladores</dir>
-      <dir>C:\xampp\htdocs\frontendret</dir>
       <dir>C:\xampp\htdocs\frontendret\vistas</dir>
       <dir>C:\xampp\htdocs\frontendret\vistas\modulos</dir>
+      <dir>C:\xampp\htdocs\frontendret</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -117,14 +122,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/vistas/modulos/categorias.php" />
-        <option value="$PROJECT_DIR$/vistas/js/proveedores.js" />
-        <option value="$PROJECT_DIR$/controladores/proveedores.controlador.php" />
-        <option value="$PROJECT_DIR$/vistas/js/custom2.js" />
-        <option value="$PROJECT_DIR$/vistas/modulos/admin-incidencia.php" />
-        <option value="$PROJECT_DIR$/vistas/js/incidencias.js" />
-        <option value="$PROJECT_DIR$/ajax/incidencia.ajax.php" />
-        <option value="$PROJECT_DIR$/vistas/js/clientes.js" />
         <option value="$PROJECT_DIR$/vistas/modulos/clientes.php" />
         <option value="$PROJECT_DIR$/vistas/js/usuarios.js" />
         <option value="$PROJECT_DIR$/modelos/usuarios.modelo.php" />
@@ -164,10 +161,18 @@
         <option value="$PROJECT_DIR$/controladores/categorias.controlador.php" />
         <option value="&lt;924e40af-ee08-4b6a-ba32-353b4885b79d&gt;/controladores/categorias.controlador.php" />
         <option value="$PROJECT_DIR$/modelos/conexion.php" />
+        <option value="$PROJECT_DIR$/vistas/js/grupo-cliente.js" />
+        <option value="$PROJECT_DIR$/modelos/grupo.modelo.php" />
+        <option value="$PROJECT_DIR$/vistas/modulos/grupo-cliente.php" />
+        <option value="$PROJECT_DIR$/controladores/grupo.controlador.php" />
         <option value="$PROJECT_DIR$/modelos/incidencia.modelo.php" />
         <option value="$PROJECT_DIR$/controladores/incidencia.controlador.php" />
         <option value="&lt;924e40af-ee08-4b6a-ba32-353b4885b79d&gt;/controladores/incidencia.controlador.php" />
         <option value="&lt;924e40af-ee08-4b6a-ba32-353b4885b79d&gt;/modelos/incidencia.modelo.php" />
+        <option value="&lt;924e40af-ee08-4b6a-ba32-353b4885b79d&gt;/modelos/grupo.modelo.php" />
+        <option value="&lt;924e40af-ee08-4b6a-ba32-353b4885b79d&gt;/controladores/grupo.controlador.php" />
+        <option value="&lt;924e40af-ee08-4b6a-ba32-353b4885b79d&gt;/vistas/js/grupo-cliente.js" />
+        <option value="&lt;924e40af-ee08-4b6a-ba32-353b4885b79d&gt;/vistas/modulos/grupo-cliente.php" />
       </list>
     </option>
   </component>
@@ -206,7 +211,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -222,12 +226,36 @@
             <path>
               <item name="RET" type="b2602c69:ProjectViewProjectNode" />
               <item name="frontendret" type="462c0819:PsiDirectoryNode" />
+              <item name="extensiones" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RET" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frontendret" type="462c0819:PsiDirectoryNode" />
+              <item name="extensiones" type="462c0819:PsiDirectoryNode" />
+              <item name="tcpdf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RET" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frontendret" type="462c0819:PsiDirectoryNode" />
+              <item name="extensiones" type="462c0819:PsiDirectoryNode" />
+              <item name="tcpdf" type="462c0819:PsiDirectoryNode" />
+              <item name="pdf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RET" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frontendret" type="462c0819:PsiDirectoryNode" />
+              <item name="modelos" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RET" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frontendret" type="462c0819:PsiDirectoryNode" />
               <item name="vistas" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -306,7 +334,8 @@
       <workItem from="1650632279748" duration="4151000" />
       <workItem from="1651515487518" duration="4853000" />
       <workItem from="1651766296823" duration="856000" />
-      <workItem from="1651851622473" duration="2521000" />
+      <workItem from="1651851622473" duration="2569000" />
+      <workItem from="1652188648254" duration="6240000" />
     </task>
     <task id="LOCAL-00001" summary="envio de email aprobado">
       <created>1639671498436</created>
@@ -336,11 +365,18 @@
       <option name="project" value="LOCAL" />
       <updated>1651524087714</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update email de aprobado servicio">
+      <created>1651863337185</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1651863337185</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72536000" />
+    <option name="totallyTimeSpent" value="78824000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -386,63 +422,15 @@
     <MESSAGE value="modificaciones" />
     <MESSAGE value="modificaciones en el inicio, categoria" />
     <MESSAGE value="uodate controller incidencias, email de aprobacion" />
-    <option name="LAST_COMMIT_MESSAGE" value="uodate controller incidencias, email de aprobacion" />
+    <MESSAGE value="update email de aprobado servicio" />
+    <option name="LAST_COMMIT_MESSAGE" value="update email de aprobado servicio" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vistas/modulos/proveedores.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="345" column="37" selection-start-line="345" selection-start-column="37" selection-end-line="345" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vistas/js/categorias.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="35" column="58" selection-start-line="35" selection-start-column="58" selection-end-line="35" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vistas/js/incidencias.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="386" column="12" selection-start-line="386" selection-start-column="12" selection-end-line="386" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/incidencia.ajax.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="154" column="40" selection-start-line="154" selection-start-column="40" selection-end-line="154" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vistas/js/clientes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/modelos/grupo.modelo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="35" column="70" selection-start-line="35" selection-start-column="70" selection-end-line="35" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vistas/modulos/lista-cliente.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vistas/modulos/clientes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="471" column="34" selection-start-line="471" selection-start-column="34" selection-end-line="471" selection-end-column="34" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vistas/modulos/panel-eventos.php">
       <provider selected="true" editor-type-id="text-editor" />
@@ -465,13 +453,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="75" selection-start-line="75" selection-end-line="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modelos/clientes.modelo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="78" column="59" selection-start-line="78" selection-start-column="59" selection-end-line="78" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -629,13 +610,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/extensiones/tcpdf/pdf/servicio-general.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="424" selection-start-line="424" selection-end-line="424" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/extensiones/tcpdf/pdf/servicio-plomeria.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
@@ -713,13 +687,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modelos/conexion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="51" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modelos/ruta.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -737,22 +704,99 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/modelos/conexion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vistas/modulos/clientes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="240" column="74" lean-forward="true" selection-start-line="240" selection-start-column="66" selection-end-line="240" selection-end-column="74" />
+          <folding>
+            <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/grupo.ajax.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="53" lean-forward="true" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modelos/clientes.modelo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extensiones/tcpdf/pdf/servicio-general.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extensiones/PHPMailer/class.phpmailer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="841" column="20" selection-start-line="841" selection-start-column="20" selection-end-line="841" selection-end-column="20" />
+          <folding>
+            <element signature="e#22652#22786#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/controladores/incidencia.controlador.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="464" lean-forward="true" selection-end-line="1719" selection-end-column="1" />
-          <folding>
-            <element signature="n#style#0;n#h3#0;n#center#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#2;n#center#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#3;n#center#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="1443">
+          <caret line="446" column="30" lean-forward="true" selection-end-line="1719" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modelos/incidencia.modelo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="1101" column="14" lean-forward="true" selection-start-line="1101" selection-start-column="14" selection-end-line="1101" selection-end-column="14" />
+        <state relative-caret-position="131">
+          <caret line="1103" column="27" lean-forward="true" selection-end-line="1148" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modelos/grupo.modelo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="108" column="46" lean-forward="true" selection-end-line="156" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controladores/grupo.controlador.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="148" column="27" lean-forward="true" selection-end-line="221" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vistas/js/grupo-cliente.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="42" column="29" selection-end-line="104" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vistas/modulos/grupo-cliente.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="246" column="18" lean-forward="true" selection-end-line="292" />
+          <folding>
+            <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

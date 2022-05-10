@@ -10,10 +10,11 @@ class ModeloGrupo{
 
 	static public function mdlIngresarNuevoGrupo($tabla, $datos){
 
-		$stmt = Conexion::conectar()->prepare("INSERT INTO $tabla(nombre,alias) VALUES (:nombre,:alias)");
+		$stmt = Conexion::conectar()->prepare("INSERT INTO $tabla(nombre,alias, email) VALUES (:nombre,:alias, :email)");
 
 		$stmt->bindParam(":nombre", $datos["nombreGrupo"], PDO::PARAM_STR);
         $stmt->bindParam(":alias", $datos["nombreAlias"], PDO::PARAM_STR);
+        $stmt->bindParam(":email", $datos["nombreEmail"], PDO::PARAM_STR);
 
 		if($stmt->execute()){
 
@@ -77,10 +78,11 @@ class ModeloGrupo{
 
 	static public function mdlEditarGrupoCliente($tabla, $datos){
 
-		$stmt = Conexion::conectar()->prepare("UPDATE $tabla SET nombre = :nombre, alias = :alias WHERE id = :id");
+		$stmt = Conexion::conectar()->prepare("UPDATE $tabla SET nombre = :nombre, alias = :alias, email = :email WHERE id = :id");
 
 		$stmt -> bindParam(":nombre", $datos["nombre"], PDO::PARAM_STR);
         $stmt -> bindParam(":alias", $datos["alias"], PDO::PARAM_STR);
+        $stmt -> bindParam(":email", $datos["email"], PDO::PARAM_STR);
 		$stmt -> bindParam(":id", $datos["id"], PDO::PARAM_INT);
 
 		if($stmt->execute()){
