@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9623ab11-5bb3-477d-a56d-fe373b2bf608" name="Default" comment="update email in grupo cliente2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vistas/js/custom2.js" beforeDir="false" afterPath="$PROJECT_DIR$/vistas/js/custom2.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vistas/modulos/detalle-incidencia.php" beforeDir="false" afterPath="$PROJECT_DIR$/vistas/modulos/detalle-incidencia.php" afterDir="false" />
     </list>
     <ignored path="RET.iws" />
@@ -38,14 +39,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vistas/modulos/detalle-incidencia.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="458" column="42" selection-start-line="458" selection-start-column="42" selection-end-line="458" selection-end-column="42" />
+            <state relative-caret-position="297">
+              <caret line="457" lean-forward="true" selection-start-line="457" selection-end-line="457" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vistas/js/custom2.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1853">
+              <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -105,7 +115,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/vistas/js/usuarios.js" />
         <option value="$PROJECT_DIR$/modelos/usuarios.modelo.php" />
         <option value="$PROJECT_DIR$/controladores/usuarios.controlador.php" />
         <option value="$PROJECT_DIR$/vistas/modulos/usuarios.php" />
@@ -156,6 +165,7 @@
         <option value="&lt;924e40af-ee08-4b6a-ba32-353b4885b79d&gt;/controladores/incidencia.controlador.php" />
         <option value="$PROJECT_DIR$/vistas/modulos/detalle-incidencia.php" />
         <option value="&lt;924e40af-ee08-4b6a-ba32-353b4885b79d&gt;/vistas/modulos/detalle-incidencia.php" />
+        <option value="$PROJECT_DIR$/vistas/js/custom2.js" />
       </list>
     </option>
   </component>
@@ -220,6 +230,12 @@
               <item name="RET" type="b2602c69:ProjectViewProjectNode" />
               <item name="frontendret" type="462c0819:PsiDirectoryNode" />
               <item name="vistas" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RET" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frontendret" type="462c0819:PsiDirectoryNode" />
+              <item name="vistas" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RET" type="b2602c69:ProjectViewProjectNode" />
@@ -312,7 +328,7 @@
       <workItem from="1651766296823" duration="856000" />
       <workItem from="1651851622473" duration="2569000" />
       <workItem from="1652188648254" duration="6913000" />
-      <workItem from="1652209792624" duration="4997000" />
+      <workItem from="1652209792624" duration="5293000" />
     </task>
     <task id="LOCAL-00001" summary="envio de email aprobado">
       <created>1639671498436</created>
@@ -367,7 +383,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84494000" />
+    <option name="totallyTimeSpent" value="84790000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -445,13 +461,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="75" selection-start-line="75" selection-end-line="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vistas/js/custom2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="140" column="16" selection-start-line="140" selection-start-column="16" selection-end-line="140" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -784,11 +793,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vistas/modulos/detalle-incidencia.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="458" column="42" selection-start-line="458" selection-start-column="42" selection-end-line="458" selection-end-column="42" />
+        <state relative-caret-position="297">
+          <caret line="457" lean-forward="true" selection-start-line="457" selection-end-line="457" />
           <folding>
             <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vistas/js/custom2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1853">
+          <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
         </state>
       </provider>
     </entry>

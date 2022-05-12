@@ -15,8 +15,8 @@ $(document).ready(function () {
 		enableApi: true,
 		addMore: true,
 		skipFileNameCheck: true,
-		limit: 20,
-		fileMaxSize: 20,
+		limit: 3,
+		fileMaxSize: 3,
 		exif: true,
 		thumbnails: {
 			box:
