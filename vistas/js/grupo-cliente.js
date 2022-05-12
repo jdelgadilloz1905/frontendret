@@ -21,7 +21,8 @@ $(".tablas").on("click", ".btnEditarGrupoCliente", function(){
 
      		$("#editarGrupoCliente").val(respuesta["nombre"]);
      		$("#idGrupoCliente").val(respuesta["id"]);
-     		$("#editarAlias").val(respuesta["alias"])
+     		$("#editarAlias").val(respuesta["alias"]);
+			$("#editarEmail").val(respuesta["email"]);
 		}
 	})
 	

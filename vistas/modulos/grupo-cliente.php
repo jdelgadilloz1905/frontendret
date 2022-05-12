@@ -40,6 +40,7 @@
                   <th style="width:10px">#</th>
                   <th>Nombre</th>
                   <th>Alias</th>
+                  <th>Email</th>
                   <th>Estatus</th>
                   <th>Acciones</th>
 
@@ -76,6 +77,8 @@
                     
                     <td class="text-uppercase">'.$value["alias"].'</td>
                     
+                    <td class="text-uppercase">'.$value["email"].'</td>
+                    
                     <td class="text-uppercase">'.$estatus.'</td>
 
                     <td>
@@ -86,7 +89,7 @@
 
                   if($_SESSION["perfil"] == "Administrador"){
 
-                    echo '<button class="btn btn-danger btnEliminarGrupoCliente" idCategoria="'.$value["id"].'"><i class="fa fa-times"></i></button>';
+                    echo '<button class="btn btn-danger btnEliminarGrupoCliente" idGrupoCliente="'.$value["id"].'"><i class="fa fa-times"></i></button>';
 
                   }
 
@@ -165,6 +168,21 @@ MODAL AGREGAR GRUPO CLIENTE
 
             </div>
 
+            <div class="form-group">
+
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">
+                        <i class="ti-email"></i>
+                    </span>
+                    </div>
+
+                    <input type="text" class="form-control input-lg" name="nuevoEmail" placeholder="Ingresar email" required>
+                </div>
+
+
+            </div>
+
           <?php
 
           $crearGrupoCliente = new ControladorGrupo();
@@ -223,6 +241,21 @@ MODAL EDITAR GRUPO DE CLIENTE
                     </div>
 
                     <input type="text" class="form-control input-lg" name="editarAlias"id="editarAlias"required>
+                </div>
+
+
+            </div>
+
+            <div class="form-group">
+
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">
+                        <i class="ti-email"></i>
+                    </span>
+                    </div>
+
+                    <input type="text" class="form-control input-lg" name="editarEmail"id="editarEmail"required>
                 </div>
 
 

@@ -1133,7 +1133,8 @@ class ModeloIncidencia{
 
     static public function mdlShowDatosUsuarioXincidencia($incidencias){
 
-        $stmt = Conexion::conectar()->prepare("SELECT i.id AS id_incidencia, i.tipo_servicio,i.fecha_resuelto,c.* FROM incidencias i INNER JOIN clientes c ON c.id = i.id_cliente WHERE i.id in($incidencias)");
+        $stmt = Conexion::conectar()->prepare("SELECT i.id AS id_incidencia, i.tipo_servicio,i.fecha_resuelto,c.*,(SELECT email FROM grupo_cliente WHERE id = c.id_grupo) AS email_grupo  
+                                                          FROM incidencias i INNER JOIN clientes c ON c.id = i.id_cliente WHERE i.id in($incidencias)");
 
         $stmt -> execute();
 

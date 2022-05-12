@@ -463,9 +463,9 @@ class ControladorIncidencia{
 
         $mail->isMail();
 
-        $mail->setFrom('no-reply@ret.com', 'RET');
+        $mail->addReplyTo($data["email_grupo"]);
 
-        $mail->addReplyTo('jdelgadilloz1905@@gmail.com', 'RET');
+        $mail->setFrom('no-reply@ret.com', 'RET');
 
         $mail->Subject = "APROBACION DE SERVICIO";
 
@@ -482,7 +482,7 @@ class ControladorIncidencia{
                                             
                                             <h3 style="font-weight:100; color:#999">SU SERVICIO HA SIDO APROBADO</h3>
 
-                                            <h3 style="font-weight:100; color:#999">NRO: '.$data["id_incidencia"].' </h3>
+                                            <h3 style="font-weight:100; color:#999">NRO: '.str_pad($data["id_incidencia"], 6, "0", STR_PAD_LEFT).' </h3>
                                             
                                             <h3 style="font-weight:100; color:#999">TIPO: '.str_replace("-"," ",$data["tipo_servicio"]).' </h3>
                                             
