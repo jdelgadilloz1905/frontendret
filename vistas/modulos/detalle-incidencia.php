@@ -460,7 +460,7 @@ MODAL VER FOTOS
 
                             foreach($imagenesAntes as $file) {
 
-                                $preloadedFiles[]= array(
+                                $preloadedFiles= array(
                                     "name" => $file["nombre"],
                                     "type" => FileUploader::mime_content_type($uploadDir . $file["nombre"]),
                                     "size" => filesize($uploadDir . $file["nombre"]),

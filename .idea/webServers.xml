@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="924e40af-ee08-4b6a-ba32-353b4885b79d" name="Elestudio57.net" url="http://estudio57.net">
+        <fileTransfer host="estudio57.net" port="21" rootFolder="/public_html/frontendret">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

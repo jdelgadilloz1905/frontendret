@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - ret_db@localhost" uuid="5747a04e-d81d-4a73-b7db-4f386d501cdf">
+    <database-info product="MySQL" version="5.5.5-10.1.31-MariaDB" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.5">
+      <schema id="1" name="ret_db"/>
+      <table id="2" parent="1" name="categorias"/>
+      <table id="3" parent="1" name="clientes"/>
+      <table id="4" parent="1" name="incidencias"/>
+      <table id="5" parent="1" name="incidencias_fotos"/>
+      <table id="6" parent="1" name="productos"/>
+      <table id="7" parent="1" name="servicio_general"/>
+      <table id="8" parent="1" name="servicio_plomeria"/>
+      <table id="9" parent="1" name="soporte"/>
+      <table id="10" parent="1" name="usuarios"/>
+      <column id="11" parent="2" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="12" parent="2" name="categoria">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="13" parent="2" name="fecha">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <key id="14" parent="2" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="15" parent="3" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="16" parent="3" name="nombre">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="17" parent="3" name="documento">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="18" parent="3" name="email">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="19" parent="3" name="telefono">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="20" parent="3" name="direccion">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="21" parent="3" name="fecha_nacimiento">
+        <mandatory>1</mandatory>
+        <data-type>date</data-type>
+      </column>
+      <column id="22" parent="3" name="incidencia">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="23" parent="3" name="ultima_incidencia">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="24" parent="3" name="fecha">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <key id="25" parent="3" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="26" parent="4" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="27" parent="4" name="id_usuario">
+        <comment>es el usuario que esta creando la incidencia</comment>
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="28" parent="4" name="id_cliente">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="29" parent="4" name="id_tecnico">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="30" parent="4" name="tipo_servicio">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="31" parent="4" name="fecha_visita">
+        <mandatory>1</mandatory>
+        <data-type>date</data-type>
+      </column>
+      <column id="32" parent="4" name="direccion">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="33" parent="4" name="asunto">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="34" parent="4" name="descripcion">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="35" parent="4" name="prioridad">
+        <comment>BAJA, NORMAL O ALTA, dependiendo de la circuntancia</comment>
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="36" parent="4" name="estatus">
+        <comment>estatus general, PENDIENTE, ASIGNADO O TERMINADO</comment>
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="37" parent="4" name="fecha_creacion">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="38" parent="4" name="fecha_modif">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="39" parent="4" name="fecha_resuelto">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+      </column>
+      <column id="40" parent="4" name="hora_inicio">
+        <comment>cuando el tecnico le de al boton iniciar trabajo se actualiza este campo</comment>
+        <mandatory>1</mandatory>
+        <data-type>time</data-type>
+      </column>
+      <column id="41" parent="4" name="hora_fin">
+        <mandatory>1</mandatory>
+        <data-type>time</data-type>
+      </column>
+      <column id="42" parent="4" name="estatus_incidencia">
+        <comment>0=Iniciar, 1=Proceso, 2=Terminado</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="43" parent="4" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="44" parent="5" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="45" parent="5" name="id_incidencia">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="46" parent="5" name="img_url">
+        <data-type>text</data-type>
+      </column>
+      <column id="47" parent="5" name="fecha_creacion">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="48" parent="5" name="nombre">
+        <data-type>text</data-type>
+      </column>
+      <column id="49" parent="5" name="tipo">
+        <data-type>text</data-type>
+      </column>
+      <column id="50" parent="5" name="tamano">
+        <data-type>text</data-type>
+      </column>
+      <column id="51" parent="5" name="extension">
+        <data-type>text</data-type>
+      </column>
+      <column id="52" parent="5" name="titulo">
+        <data-type>text</data-type>
+      </column>
+      <column id="53" parent="5" name="momento">
+        <comment>se debe realizar la carga de fotos antes de comenzar y despues de terminar el trabajo se carga otras fotos</comment>
+        <data-type>text</data-type>
+      </column>
+      <key id="54" parent="5" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="55" parent="6" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="56" parent="6" name="id_categoria">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="57" parent="6" name="codigo">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="58" parent="6" name="tipo">
+        <comment>si es servicio o venta</comment>
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="59" parent="6" name="descripcion">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="60" parent="6" name="imagen">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="61" parent="6" name="stock">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="62" parent="6" name="precio_compra">
+        <mandatory>1</mandatory>
+        <data-type>float</data-type>
+      </column>
+      <column id="63" parent="6" name="precio_venta">
+        <mandatory>1</mandatory>
+        <data-type>float</data-type>
+      </column>
+      <column id="64" parent="6" name="ventas">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="65" parent="6" name="fecha">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <key id="66" parent="6" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="67" parent="7" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="68" parent="7" name="id_incidencia">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="69" parent="7" name="vaciado">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="70" parent="7" name="vaciado_parcial">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="71" parent="7" name="otros">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="72" parent="7" name="limpeza_regular">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="73" parent="7" name="inspeccion">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="74" parent="7" name="interceptor_aceite">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="75" parent="7" name="tanque_almacenamiento">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="76" parent="7" name="pozo_septico">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="77" parent="7" name="estacion_bombas">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="78" parent="7" name="tanque_recibidor">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="79" parent="7" name="tanque_aceites">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="80" parent="7" name="otros1">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="81" parent="7" name="interior">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="82" parent="7" name="exterior">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="83" parent="7" name="interior_exterior">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="84" parent="7" name="limpieza_derrame_liquido">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="85" parent="7" name="limpieza_manhole">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="86" parent="7" name="limpieza_lift_station">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="87" parent="7" name="limpieza_tuberias">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="88" parent="7" name="limpieza_registros_desagues">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="89" parent="7" name="limpieza_registros_num">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="90" parent="7" name="limpieza_desagues_num">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="91" parent="7" name="remocion_acarreo">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="92" parent="7" name="remocion_grasas">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="93" parent="7" name="otros2">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="94" parent="7" name="vacuum">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="95" parent="7" name="vacuumNum">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="96" parent="7" name="vacuum_portable">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="97" parent="7" name="water_jetter">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="98" parent="7" name="tanktruck">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="99" parent="7" name="otros3">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="100" parent="7" name="coverAll">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="101" parent="7" name="guantes">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="102" parent="7" name="capacete">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="103" parent="7" name="equipo_espacio_confinado">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="104" parent="7" name="comentario">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="105" parent="7" name="desechos_liquidos">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="106" parent="7" name="aguas_residuales">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="107" parent="7" name="aceites_vegetales">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="108" parent="7" name="otros4">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="109" parent="7" name="total_desperciado">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="110" parent="7" name="hora_entrada">
+        <mandatory>1</mandatory>
+        <data-type>time</data-type>
+      </column>
+      <column id="111" parent="7" name="hora_fin">
+        <mandatory>1</mandatory>
+        <data-type>time</data-type>
+      </column>
+      <column id="112" parent="7" name="fecha_visita">
+        <mandatory>1</mandatory>
+        <data-type>date</data-type>
+      </column>
+      <column id="113" parent="7" name="fecha_creacion">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="114" parent="7" name="fecha_modif">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <key id="115" parent="7" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="116" parent="8" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="117" parent="8" name="id_incidencia">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="118" parent="8" name="destape">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="119" parent="8" name="reparacion">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="120" parent="8" name="otros">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="121" parent="8" name="instalacion">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="122" parent="8" name="inspeccion">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="123" parent="8" name="banos">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="124" parent="8" name="cocina">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="125" parent="8" name="otros1">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="126" parent="8" name="trampas">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="127" parent="8" name="drenaje">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="128" parent="8" name="inspeccion_cctv">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="129" parent="8" name="limpieza_tuberia">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="130" parent="8" name="inpeccion_controles">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="131" parent="8" name="reparacion_controles">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="132" parent="8" name="limpieza_desagues">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="133" parent="8" name="limpieza_derrame">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="134" parent="8" name="k1">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="135" parent="8" name="k2">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="136" parent="8" name="water">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="137" parent="8" name="soplete">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="138" parent="8" name="fuete">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="139" parent="8" name="otros2">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="140" parent="8" name="equipo_seguridad">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="141" parent="8" name="cover">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="142" parent="8" name="guantes">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="143" parent="8" name="botas">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="144" parent="8" name="capacete">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="145" parent="8" name="camara">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="146" parent="8" name="detalle_servicios_regulares">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="147" parent="8" name="detalle_servicios_realizado">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="148" parent="8" name="limpieza_desagues_num">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="149" parent="8" name="limpieza_desagues_registro">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="150" parent="8" name="detalle_equipos_utilizados">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="151" parent="8" name="comentario">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="152" parent="8" name="hora_inicio">
+        <mandatory>1</mandatory>
+        <data-type>time</data-type>
+      </column>
+      <column id="153" parent="8" name="hora_fin">
+        <mandatory>1</mandatory>
+        <data-type>time</data-type>
+      </column>
+      <column id="154" parent="8" name="tecnico_adicional">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="155" parent="8" name="titulo">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="156" parent="8" name="nombre_letra_molde">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="157" parent="8" name="fecha_visita">
+        <mandatory>1</mandatory>
+        <data-type>date</data-type>
+      </column>
+      <column id="158" parent="8" name="fecha_creacion">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="159" parent="8" name="fecha_modif">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <key id="160" parent="8" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="161" parent="9" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="162" parent="9" name="id_tecnico">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="163" parent="9" name="fecha_creacion">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="164" parent="9" name="fecha_modif">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <key id="165" parent="9" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="166" parent="10" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="167" parent="10" name="nombre">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="168" parent="10" name="usuario">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="169" parent="10" name="password">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="170" parent="10" name="perfil">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="171" parent="10" name="foto">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="172" parent="10" name="estado">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="173" parent="10" name="ultimo_login">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="174" parent="10" name="fecha">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <key id="175" parent="10" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>

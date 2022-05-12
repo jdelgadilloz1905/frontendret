@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9623ab11-5bb3-477d-a56d-fe373b2bf608" name="Default" comment="update email in grupo cliente">
+    <list default="true" id="9623ab11-5bb3-477d-a56d-fe373b2bf608" name="Default" comment="update email in grupo cliente2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controladores/incidencia.controlador.php" beforeDir="false" afterPath="$PROJECT_DIR$/controladores/incidencia.controlador.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vistas/modulos/detalle-incidencia.php" beforeDir="false" afterPath="$PROJECT_DIR$/vistas/modulos/detalle-incidencia.php" afterDir="false" />
     </list>
     <ignored path="RET.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,7 +37,20 @@
     <favorites_list name="RET" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vistas/modulos/detalle-incidencia.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="314">
+              <caret line="458" column="42" selection-start-line="458" selection-start-column="42" selection-end-line="458" selection-end-column="42" />
+              <folding>
+                <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -92,7 +105,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/vistas/modulos/clientes.php" />
         <option value="$PROJECT_DIR$/vistas/js/usuarios.js" />
         <option value="$PROJECT_DIR$/modelos/usuarios.modelo.php" />
         <option value="$PROJECT_DIR$/controladores/usuarios.controlador.php" />
@@ -111,7 +123,6 @@
         <option value="&lt;924e40af-ee08-4b6a-ba32-353b4885b79d&gt;/prueba.php" />
         <option value="&lt;924e40af-ee08-4b6a-ba32-353b4885b79d&gt;/prueba.html" />
         <option value="&lt;e40af651-eaea-4c83-869c-9d5348089dd6&gt;/modelos/ruta.php" />
-        <option value="$PROJECT_DIR$/vistas/modulos/detalle-incidencia.php" />
         <option value="$PROJECT_DIR$/vistas/modulos/detalle-incidencia-cliente.php" />
         <option value="$PROJECT_DIR$/vistas/modulos/detalle-incidencia-grupo.php" />
         <option value="$PROJECT_DIR$/extensiones/tcpdf/pdf/servicio-plomeria.php" />
@@ -143,6 +154,8 @@
         <option value="&lt;924e40af-ee08-4b6a-ba32-353b4885b79d&gt;/vistas/modulos/grupo-cliente.php" />
         <option value="$PROJECT_DIR$/controladores/incidencia.controlador.php" />
         <option value="&lt;924e40af-ee08-4b6a-ba32-353b4885b79d&gt;/controladores/incidencia.controlador.php" />
+        <option value="$PROJECT_DIR$/vistas/modulos/detalle-incidencia.php" />
+        <option value="&lt;924e40af-ee08-4b6a-ba32-353b4885b79d&gt;/vistas/modulos/detalle-incidencia.php" />
       </list>
     </option>
   </component>
@@ -299,7 +312,7 @@
       <workItem from="1651766296823" duration="856000" />
       <workItem from="1651851622473" duration="2569000" />
       <workItem from="1652188648254" duration="6913000" />
-      <workItem from="1652209792624" duration="940000" />
+      <workItem from="1652209792624" duration="4997000" />
     </task>
     <task id="LOCAL-00001" summary="envio de email aprobado">
       <created>1639671498436</created>
@@ -343,15 +356,21 @@
       <option name="project" value="LOCAL" />
       <updated>1652198409710</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="update email in grupo cliente2">
+      <created>1652216603223</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1652216603223</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80437000" />
+    <option name="totallyTimeSpent" value="84494000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13006397" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -364,7 +383,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.3289689" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32885906" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32885906" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="RNConsole" order="10" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
@@ -373,7 +392,7 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="Remote Host" order="3" visible="true" weight="0.123667374" />
+      <window_info anchor="right" id="Remote Host" order="3" visible="true" weight="0.123667374" />
       <window_info anchor="right" id="Database" order="4" weight="0.16523606" />
     </layout>
   </component>
@@ -395,7 +414,8 @@
     <MESSAGE value="uodate controller incidencias, email de aprobacion" />
     <MESSAGE value="update email de aprobado servicio" />
     <MESSAGE value="update email in grupo cliente" />
-    <option name="LAST_COMMIT_MESSAGE" value="update email in grupo cliente" />
+    <MESSAGE value="update email in grupo cliente2" />
+    <option name="LAST_COMMIT_MESSAGE" value="update email in grupo cliente2" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.htaccess">
@@ -543,16 +563,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="321">
           <caret line="128" column="151" selection-start-line="128" selection-start-column="137" selection-end-line="128" selection-end-column="151" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vistas/modulos/detalle-incidencia.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="189" column="166" selection-start-line="189" selection-start-column="111" selection-end-line="189" selection-end-column="166" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -769,6 +779,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="462" lean-forward="true" selection-end-line="1719" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vistas/modulos/detalle-incidencia.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="458" column="42" selection-start-line="458" selection-start-column="42" selection-end-line="458" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
