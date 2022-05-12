@@ -15,6 +15,7 @@ $listaVendedor = ControladorUsuarios::ctrListaUsuariosFiltro("perfil","Tecnico")
 <!--=====================================
 PÁGINA DE USUARIOS
 ======================================-->
+
 <div class="page-wrapper">
     <!-- ============================================================== -->
     <!-- Container fluid  -->
@@ -31,7 +32,6 @@ PÁGINA DE USUARIOS
                     <li class="breadcrumb-item active">Servicios</li>
                 </ol>
             </div>
-
         </div>
         <!-- ============================================================== -->
         <!-- End Bread crumb and right sidebar toggle -->
@@ -85,11 +85,10 @@ PÁGINA DE USUARIOS
                         </div>
 
                         <ul class="nav nav-tabs customtab2" role="tablist">
-                            <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#iniciar" role="tab"><span class="hidden-sm-up">Iniciar</span> <span class="hidden-xs-down">Por iniciar</span></a> </li>
-                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#proceso" role="tab"><span class="hidden-sm-up">Proceso</span> <span class="hidden-xs-down">En proceso</span></a> </li>
-                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#terminado" role="tab"><span class="hidden-sm-up">Terminado</span> <span class="hidden-xs-down">Terminado</span></a> </li>
-                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#aprobado" role="tab"><span class="hidden-sm-up">Aprobado</span> <span class="hidden-xs-down">Aprobado</span></a> </li>
-
+                            <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#iniciar" role="tab" onclick="resizeDatatable()"><span class="hidden-sm-up">Iniciar</span> <span class="hidden-xs-down">Por iniciar</span></a> </li>
+                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#proceso" role="tab" onclick="resizeDatatable()"><span class="hidden-sm-up">Proceso</span> <span class="hidden-xs-down">En proceso</span></a> </li>
+                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#terminado" role="tab" onclick="resizeDatatable()"><span class="hidden-sm-up">Terminado</span> <span class="hidden-xs-down">Terminado</span></a> </li>
+                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#aprobado" role="tab" onclick="resizeDatatable()"><span class="hidden-sm-up">Aprobado</span> <span class="hidden-xs-down">Aprobado</span></a> </li>
                         </ul>
                         <!-- Tab panes -->
                         <div class="tab-content">
@@ -99,46 +98,34 @@ PÁGINA DE USUARIOS
                                         <button type="button" class="btn waves-effect waves-light btn-block btn-info" data-toggle="modal" id="CambiarOpcion2" data-target="#modalCambiarOpcion">* Cambiar Opción</button>
                                     </div>
                                     <table id="incidenciaAdminIniciar" class="table table-bordered table-striped dt-responsive tablas" style="width: 100%;">
-
                                         <thead>
-
-                                        <tr>
-
-                                            <th style="width:10px">#</th>
-                                            <th>* Acción por Lote</th>
-                                            <!--                                    <th>Abierto por</th>-->
-                                            <th>Cliente</th>
-                                            <th>Direccion</th>
-                                            <th>Tecnico</th>
-                                            <th>Tipo Servicio</th>
-                                            <th>Prioridad</th>
-                                            <th>Fecha creacion</th>
-                                            <th>Fecha visita</th>
-                                            <th>Estatus</th>
-                                            <th>Acciones</th>
-
-                                        </tr>
-
+                                            <tr>
+                                                <th style="width:10px">#</th>
+                                                <th>* Acción por Lote</th>
+                                                <!--                                    <th>Abierto por</th>-->
+                                                <th>Cliente</th>
+                                                <th>Direccion</th>
+                                                <th>Tecnico</th>
+                                                <th>Tipo Servicio</th>
+                                                <th>Prioridad</th>
+                                                <th>Fecha creacion</th>
+                                                <th>Fecha visita</th>
+                                                <th>Estatus</th>
+                                                <th>Acciones</th>
+                                            </tr>
                                         </thead>
-
                                         <tbody>
-
                                         <?php
-
                                         $item = "estatus_incidencia";
                                         $valor = 0;
-
                                         $categorias = ControladorIncidencia::ctrMostrarIncidenciasFiltro($item,$valor, 0);
-
                                         foreach ($categorias as $key => $value) {
-
                                             //BUSCO EL USUARIO QUIEN CREO LA INCIDENCIA
                                             //$nombreUsuario = ControladorUsuarios::ctrMostrarUsuarios("id",$value["id_usuario"]);
                                             //BUSCO EL CLIENTE
                                             //$nombreCliente = ControladorClientes::ctrMostrarClientes("id",$value["id_cliente"]);
                                             //BUSCO EL TENICO
                                             //$nombreTecnico= ControladorUsuarios::ctrMostrarUsuarios("id",$value["id_tecnico"]);
-
                                             switch ($value["estatus"]) {
                                                 case "pendiente":
                                                     $texto = "Pendiente";
@@ -156,9 +143,7 @@ PÁGINA DE USUARIOS
                                                     $claseBoton="display: none"; //no se podra tomar acciones sobre incidencias que ya estan culminadas
                                                     break;
                                             }
-
                                             /*BOTON DE TEMPORIZADOR O ESTATUS DE LA INCIDENCIA SI ESTA EN PROCESO */
-
                                             switch ($value["estatus_incidencia"]){
                                                 case "0":
                                                     $colorEstado = "btn-dark";
@@ -557,13 +542,13 @@ PÁGINA DE USUARIOS
                             </div>
                             <div class="tab-pane p-20" id="aprobado" role="tabpanel">
                                 <div class="table-responsive m-t-40">
-                                    <table id="incidenciaAdminAprobado" class="table table-bordered table-striped dt-responsive tablas" style="width: 100%;">
+                                    <table id="incidenciaAdminAprobado" class="table table-bordered table-striped dt-responsive tablas collapsed" width="100%;">
 
                                         <thead>
 
                                         <tr>
 
-                                            <th style="width:10px">#</th>
+                                            <th>#</th>
                                             <th>* Acción por Lote</th>
                                             <!--                                    <th>Abierto por</th>-->
                                             <th>Cliente</th>
@@ -676,10 +661,6 @@ PÁGINA DE USUARIOS
 
                                             <td> <span class="'.$clase.' ">'.($texto).'</span></td>
                                             
-                                            
-
-
-
                     <td>
 
                       <div class="btn-group">
@@ -715,6 +696,7 @@ PÁGINA DE USUARIOS
                 </div>
             </div>
         </div>
+
         <!-- ============================================================== -->
         <!-- End PAge Content -->
         <!-- ============================================================== -->
