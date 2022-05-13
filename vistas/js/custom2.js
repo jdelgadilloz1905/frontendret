@@ -1,6 +1,7 @@
 /** @format */
 
 function resizeDatatable() {
+	console.log('trigger para datatables...')
 	setTimeout(function () {
 		var DataTable = $('.dataTable').DataTable()
 		DataTable.columns.adjust().responsive.recalc()
