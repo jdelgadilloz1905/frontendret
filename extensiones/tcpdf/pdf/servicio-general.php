@@ -135,39 +135,27 @@ class imprimirServicioPlomeria{
 
     $bloque1 = <<<EOF
     
-    <table border="0" style="border-color:#f0f0f0 !important;">
-            <tr style="border-color:#f0f0f0 !important;">
-                <td style="width:200px">
-                <div style="font-size:8.5px; text-align:left; line-height:15px;">
-                PO BOX 801322
-                <br>
-                COTO LAUREL PR 00780-1322
-                <br>
-                TEL.(787) 952-9331 / (787) 636-8276
+    <table>
+        <tr>
+            <td style="width:45%">
+                <div style="font-size:8px; text-align:left;">
+                    PO BOX 801322
+                    <br/>
+                    COTO LAUREL PR 00780-1322
+                    <br/>
+                    TEL.(787) 952-9331 / (787) 636-8276
                 </div>
-                </td>
+            </td>
 
-                <td style="background-color:white; width:140px; border: none">
+            <td style="background-color:white; width:10%;"> 
+                <br/><br/>
+                <img width:20px; src="images/logo-negro-bloque.png">                    
+            </td>
 
-                    
-                    <img src="images/logo-negro-bloque.png">                    
-
-                </td>
-
-                <td style="background-color:white; width:70px">
-
-                    <div style="font-size:8.5px; text-align:right; line-height:15px;">
-                        
-
-                        
-
-                    </div>
-
-                </td>
-
-                <td style="background-color:white; width:200px; text-align:center; color:red"><br><br>SERVICIO Nº<br>$id_incidencia</td>
-            </tr>
-        </table>
+            <td style="background-color:white; width:45%; text-align:right; color:red"><br><br>SERVICIO Nº<br>$id_incidencia</td>
+        </tr>
+    </table>
+    <br/><br/>
 
 
 EOF;
@@ -183,31 +171,16 @@ EOF;
 
         $bloque2 = <<<EOF
 
-        <table>
-            <tr>
-                <td style="width:540px"><img src="images/back.jpg"></td>
 
+
+        <table style="font-size:8px; padding:3px">
+            <tr>
+                <td style="border: 1px solid #666; background-color:white; text-align:center width:100%"><h3>HOJA DE SERVICIO Y MANIFIESTO</h3></td>
             </tr>
-        </table>
-
-        <table style="font-size:8.5px; padding:5px 10px;">
-
             <tr>
-
-            <td style="border: 1px solid #666; background-color:white; text-align:center width:540px"><h1>HOJA DE SERVICIO Y MANIFIESTO</h1></td>
-
-
-            </tr>
-
-            <tr>
-
-            <td style="border: 1px solid #666; background-color:white; width:270px">Cliente: $datosCliente[alias] - $datosCliente[localizador] - $datosCliente[documento]</td>
-
-
-            <td style="border: 1px solid #666; background-color:white; width:140px; text-align:left">Fecha: $fecha_visita</td>
-            
-            <td style="border: 1px solid #666; background-color:white; width:130px; text-align:left">Grupo: $datosCliente[alias] </td>
-
+                <td style="border: 1px solid #666; background-color:white; width:270px">Cliente: $datosCliente[alias] - $datosCliente[localizador] - $datosCliente[documento]</td>
+                <td style="border: 1px solid #666; background-color:white; width:140px; text-align:left">Fecha: $fecha_visita</td>        
+                <td style="border: 1px solid #666; background-color:white; width:130px; text-align:left">Grupo: $datosCliente[alias] </td>
             </tr>
 
             <tr>
@@ -278,18 +251,18 @@ EOF;
             </tr>
             <tr>
 
-                <td style="border: 1px solid #666; background-color:white; width:300px"><h4>SERVICIOS ESPECIALES</h4></td>
+                <td style="border: 1px solid #666; background-color:white; width:280px"><h4>SERVICIOS ESPECIALES</h4></td>
 
-                <td style="border: 1px solid #666; background-color:white; width:130px"><h4>EQUIPOS UTILIZADOS</h4></td>
+                <td style="border: 1px solid #666; background-color:white; width:120px"><h4>EQUIPOS UTILIZADOS</h4></td>
 
-                <td style="border: 1px solid #666; background-color:white; width:110px"><h4>EQUIPO DE SEGURIRDAD</h4></td>
+                <td style="border: 1px solid #666; background-color:white; width:140px"><h4>EQUIPO DE SEGURIRDAD</h4></td>
 
 
             </tr>
 
 
             <tr>
-                <td style="border: 1px solid #666; background-color:white; width:300px">
+                <td style="border: 1px solid #666; background-color:white; width:280px">
                         <input type="checkbox" name="limpieza_derrame_liquido" value="1" checked="$limpieza_derrame_liquido" disabled/> <label for="limpieza_derrame_liquido">Limpieza y respuesta a derrame de líquidos no peligrosos</label>
                     <br>
                         <input type="checkbox" name="limpieza_manhole" value="1" checked="$limpieza_manhole" disabled/> <label for="limpieza_manhole">Limpieza de "manhole" alcantarilla</label>
@@ -306,7 +279,7 @@ EOF;
                     <br>
                         <input type="checkbox" name="otros2" value="1" checked="$otros2" disabled/> <label for="otros2">Otros servicios (Favor detallar en espacio de comentarios</label>
                 </td>
-                <td style="border: 1px solid #666; background-color:white;  width:130px">
+                <td style="border: 1px solid #666; background-color:white;  width:120px">
                         <input type="checkbox" name="vacumm" value="1" checked="$vacuum" disabled/> <label for="vacum">Vacuum No. <strong>$servicio[vacuumNum]</strong></label>
                     <br>
                         <input type="checkbox" name="vacuum_portable" value="1" checked="$vacuum_portable" disabled/> <label for="vacuum_portable">Vacuum Portable</label>
@@ -319,7 +292,7 @@ EOF;
 
                 </td>
 
-                <td style="border: 1px solid #666; background-color:white;  width:110px">
+                <td style="border: 1px solid #666; background-color:white;  width:140px">
                         <input type="checkbox" name="coverAll" value="1" checked="$coverAll" disabled/> <label for="coverAll">Cover all</label>
                     <br>
                         <input type="checkbox" name="guantes" value="1" checked="$guantes" disabled/> <label for="guantes">Guantes</label>
@@ -348,10 +321,10 @@ EOF;
         $bloque3 = <<<EOF
 
 
-        <table style="font-size:8.5px; padding:5px 10px;">
+        <table style="font-size:8px; padding:2px;">
 
             <tr>
-                <td style="border: 1px solid #666; background-color:white; text-align:center; width:540px"><h4>COMENTARIO</h4></td>
+                <td style="border: 1px solid #666; background-color:white; text-align:center; width:540px; padding: 0"><h4>COMENTARIO</h4></td>
             </tr>
 
             <tr>
@@ -413,7 +386,7 @@ EOF;
 
         $bloque4 = <<<EOF
 
-        <table style="font-size:8.5px; padding:5px 10px;">
+        <table style="font-size:8px; padding:3px;">
 
 
             <tr>
