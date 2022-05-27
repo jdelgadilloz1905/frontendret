@@ -116,39 +116,27 @@ class imprimirServicioPlomeria{
 
     $bloque1 = <<<EOF
 
-        <table border="0" style="border-color:#f0f0f0 !important;">
-            <tr style="border-color:#f0f0f0 !important;">
-                <td style="width:200px">
-                <div style="font-size:8.5px; text-align:left; line-height:15px;">
-                PO BOX 801322
-                <br>
-                COTO LAUREL PR 00780-1322
-                <br>
-                TEL.(787) 952-9331 / (787) 636-8276
+    <table>
+        <tr>
+            <td style="width:45%">
+                <div style="font-size:8px; text-align:left;">
+                    PO BOX 801322
+                    <br/>
+                    COTO LAUREL PR 00780-1322
+                    <br/>
+                    TEL.(787) 952-9331 / (787) 636-8276
                 </div>
-                </td>
+            </td>
 
-                <td style="background-color:white; width:140px; border: none">
+            <td style="background-color:white; width:10%;"> 
+                <br/><br/>
+                <img width:20px; src="images/logo-negro-bloque.png">                    
+            </td>
 
-                    
-                    <img src="images/logo-negro-bloque.png">                    
-
-                </td>
-
-                <td style="background-color:white; width:70px">
-
-                    <div style="font-size:8.5px; text-align:right; line-height:15px;">
-                        
-
-                        
-
-                    </div>
-
-                </td>
-
-                <td style="background-color:white; width:200px; text-align:center; color:red"><br><br>SERVICIO Nº<br>$id_incidencia</td>
-            </tr>
-        </table>
+            <td style="background-color:white; width:45%; text-align:right; color:red"><br><br>SERVICIO Nº<br>$id_incidencia</td>
+        </tr>
+    </table>
+    <br/><br/>
 
 EOF;
 
@@ -163,18 +151,11 @@ EOF;
 
         $bloque2 = <<<EOF
 
-        <table>
-            <tr>
-                <td style="width:540px"><img src="images/back.jpg"></td>
-
-            </tr>
-        </table>
-
-        <table style="font-size:8.5px; padding:5px 10px;">
+        <table style="font-size:8px; padding:5px 5px;">
 
             <tr>
 
-            <td style="border: 1px solid #666; background-color:white; text-align:center width:540px"><h1>HOJA DE SERVICIOS</h1></td>
+            <td style="border: 1px solid #666; background-color:white; text-align:center width:540px"><h3>HOJA DE SERVICIOS</h3></td>
 
 
             </tr>
@@ -214,11 +195,11 @@ EOF;
 
             <tr>
 
-                <td style="border: 1px solid #666; background-color:white; text-align:center; width:270px"><h3>SERVICIOS REGULARES</h3>
+                <td style="border: 1px solid #666; background-color:white; text-align:center; width:270px"><h4>SERVICIOS REGULARES</h4>
 
                 </td>
 
-                <td style="border: 1px solid #666; background-color:white; text-align:center; width:270px"><h3>EQUPOS REALIZADOS</h3></td>
+                <td style="border: 1px solid #666; background-color:white; text-align:center; width:270px"><h4>EQUPOS REALIZADOS</h4></td>
 
 
             </tr>
@@ -268,11 +249,11 @@ EOF;
 
             <tr>
 
-                <td style="border: 1px solid #666; background-color:white; text-align:center; width:270px"><h3>SERVICIOS ESPECIALES</h3>
+                <td style="border: 1px solid #666; background-color:white; text-align:center; width:270px"><h4>SERVICIOS ESPECIALES</h4>
 
                 </td>
 
-                <td style="border: 1px solid #666; background-color:white; text-align:center; width:270px"><h3>EQUPOS UTILIZADOS</h3></td>
+                <td style="border: 1px solid #666; background-color:white; text-align:center; width:270px"><h4>EQUPOS UTILIZADOS</h4></td>
 
             </tr>
 
@@ -356,7 +337,7 @@ EOF;
 
                             </tr>
                         </table>
-                        <table style="font-size:8.5px; padding:5px 10px;">
+                        <table style="font-size:8px; padding:5px 5px;">
 
                         <tr>
                             <td style="border: 1px solid #666; background-color:white; text-align:center; width:540px"><h3>PRODUCTOS UTILIZADOS</h3></td>
@@ -389,10 +370,10 @@ EOF;
         $bloque3 = <<<EOF
 
 
-        <table style="font-size:8.5px; padding:5px 10px;">
+        <table style="font-size:8px; padding:5px 5px;">
 
             <tr>
-                <td style="border: 1px solid #666; background-color:white; text-align:center; width:540px"><h3>COMENTARIO</h3></td>
+                <td style="border: 1px solid #666; background-color:white; text-align:center; width:540px"><h4>COMENTARIO</h4></td>
             </tr>
 
             <tr>
@@ -408,9 +389,9 @@ EOF;
 
         $bloque1 = <<<EOF
 
-        <table style="font-size:8.5px; padding:5px 10px;">
+        <table style="font-size:8px; padding:5px 5px;">
             <tr>
-                <td style="text-align:center"><h3>SERVICIO REALIZADO POR</h3></td>
+                <td style="text-align:center"><h4>SERVICIO REALIZADO POR</h4></td>
             </tr>
             <tr>
                 <td style="width:270px">Supervisor de Turno: <strong>Miguel Velazquez Ramirez</strong></td>
