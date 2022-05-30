@@ -110,7 +110,7 @@ PÁGINA DE USUARIOS
                                                 <th>Prioridad</th>
                                                 <th>Fecha creacion</th>
                                                 <th>Fecha visita</th>
-                                                <th>Estatus</th>
+<!--                                                <th>Estatus</th>-->
                                                 <th>Acciones</th>
                                             </tr>
                                         </thead>
@@ -180,7 +180,7 @@ PÁGINA DE USUARIOS
 
                                             <td>'.($selector).'</td>
                                             
-                                            <td>'.($value["alias"] .'-'.$value["localizador"].'-'.$value["documento"]).'</td> 
+                                            <td>'.($value["alias"] .'-'.$value["documento"].'-'.$value["localizador"]).'</td> 
 
                                             <td>'.($value["direccionCliente"]).'</td>
 
@@ -194,7 +194,7 @@ PÁGINA DE USUARIOS
 
                                             <td>'.(date("m-d-Y", strtotime($value["fecha_visita"]))).'</td>
 
-                                            <td> <span class="'.$clase.' ">'.($texto).'</span></td>
+
                                             
                                             
 
@@ -244,13 +244,13 @@ PÁGINA DE USUARIOS
                                             <th>* Acción por Lote</th>
                                             <!--                                    <th>Abierto por</th>-->
                                             <th>Cliente</th>
-                                            <th>Direccion</th>
+<!--                                            <th>Direccion</th>-->
                                             <th>Tecnico</th>
                                             <th>Tipo servicio</th>
-                                            <th>Prioridad</th>
-                                            <th>Fecha creacion</th>
+<!--                                            <th>Prioridad</th>-->
+<!--                                            <th>Fecha creacion</th>-->
                                             <th>Fecha visita</th>
-                                            <th>Estatus</th>
+<!--                                            <th>Estatus</th>-->
 
                                             <th>Acciones</th>
 
@@ -334,21 +334,21 @@ PÁGINA DE USUARIOS
 
                                             <td>'.($selector).'</td>
                                             
-                                            <td>'.($value["alias"] .'-'.$value["localizador"].'-'.$value["documento"]).'</td>
+                                            <td>'.($value["alias"] .'-'.$value["documento"].'-'.$value["localizador"]).'</td>
 
-                                            <td>'.($value["direccionCliente"]).'</td>
+                                            
 
                                             <td>'.($value["nombreTecnico"]).'</td>
 
                                             <td>'.(str_replace("-"," ",$value["tipo_servicio"])).'</td>
 
-                                            <td>'.($value["prioridad"]).'</td>
+                                            
 
-                                            <td>'.(date("m-d-Y", strtotime($value["fecha_creacion"]))).'</td>
+                                            
 
                                             <td>'.(date("m-d-Y", strtotime($value["fecha_visita"]))).'</td>
 
-                                            <td> <span class="'.$clase.' ">'.($texto).'</span></td>
+                                            
                                             
                                             
 
@@ -398,14 +398,15 @@ PÁGINA DE USUARIOS
                                             <th>* Acción por Lote</th>
                                             <!--                                    <th>Abierto por</th>-->
                                             <th>Cliente</th>
-                                            <th>Direccion</th>
+<!--                                            <th>Direccion</th>-->
                                             <th>Tecnico</th>
                                             <th>Tipo servicio</th>
-                                            <th>Prioridad</th>
-                                            <th>Fecha creacion</th>
-                                            <th>Fecha visita</th>
-                                            <th>Aprobado</th>
-                                            <th>Estatus</th>
+<!--                                            <th>Prioridad</th>-->
+<!--                                            <th>Fecha creacion</th>-->
+<!--                                            <th>Fecha visita</th>-->
+                                            <th>Fecha Terminado</th>
+<!--                                            <th>Aprobado</th>-->
+<!--                                            <th>Estatus</th>-->
 
                                             <th>Acciones</th>
 
@@ -489,23 +490,23 @@ PÁGINA DE USUARIOS
 
                                             <td>'.($value["aprobado"] == 0 ? ($selector) : "").'</td>
                                             
-                                            <td>'.($value["alias"] .'-'.$value["localizador"].'-'.$value["documento"]).'</td>
+                                            <td>'.($value["alias"] .'-'.$value["documento"].'-'.$value["localizador"]).'</td>
 
-                                            <td>'.($value["direccionCliente"]).'</td>
+                                            
 
                                             <td>'.($value["nombreTecnico"]).'</td>
 
                                             <td>'.(str_replace("-"," ",$value["tipo_servicio"])).'</td>
 
-                                            <td>'.($value["prioridad"]).'</td>
-
-                                            <td>'.(date("m-d-Y", strtotime($value["fecha_creacion"]))).'</td>
-
-                                            <td>'.(date("m-d-Y", strtotime($value["fecha_visita"]))).'</td>
                                             
-                                            <td>'.($value["aprobado"] == 0 ? "No" : "Si").'</td>
 
-                                            <td> <span class="'.$clase.' ">'.($texto).'</span></td>
+                                            
+                                            
+                                            <td>'.(date("m-d-Y", strtotime($value["fecha_resuelto"]))).'</td>
+                                            
+                                            
+
+                                            
                                             
                                             
 
@@ -552,14 +553,15 @@ PÁGINA DE USUARIOS
                                             <th>* Acción por Lote</th>
                                             <!--                                    <th>Abierto por</th>-->
                                             <th>Cliente</th>
-                                            <th>Direccion</th>
+<!--                                            <th>Direccion</th>-->
                                             <th>Tecnico</th>
                                             <th>Tipo servicio</th>
-                                            <th>Prioridad</th>
+<!--                                            <th>Prioridad</th>-->
                                             <th>Fecha creacion</th>
                                             <th>Fecha visita</th>
-                                            <th>Aprobado</th>
-                                            <th>Estatus</th>
+                                            <th>Fecha Terminado</th>
+<!--                                            <th>Aprobado</th>-->
+<!--                                            <th>Estatus</th>-->
 
                                             <th>Acciones</th>
 
@@ -643,23 +645,23 @@ PÁGINA DE USUARIOS
 
                                             <td>'.($value["aprobado"] == 0 ? ($selector) : "").'</td>
                                             
-                                            <td>'.($value["alias"] .'-'.$value["localizador"].'-'.$value["documento"]).'</td>
+                                            <td>'.($value["alias"] .'-'.$value["documento"].'-'.$value["localizador"]).'</td>
 
-                                            <td>'.($value["direccionCliente"]).'</td>
+                                          
 
                                             <td>'.($value["nombreTecnico"]).'</td>
 
                                             <td>'.(str_replace("-"," ",$value["tipo_servicio"])).'</td>
 
-                                            <td>'.($value["prioridad"]).'</td>
+                                          
 
                                             <td>'.(date("m-d-Y", strtotime($value["fecha_creacion"]))).'</td>
 
                                             <td>'.(date("m-d-Y", strtotime($value["fecha_visita"]))).'</td>
                                             
-                                            <td>'.($value["aprobado"] == 0 ? "No" : "Si").'</td>
+                                             <td>'.(date("m-d-Y", strtotime($value["fecha_resuelto"]))).'</td>
 
-                                            <td> <span class="'.$clase.' ">'.($texto).'</span></td>
+                                          
                                             
                     <td>
 

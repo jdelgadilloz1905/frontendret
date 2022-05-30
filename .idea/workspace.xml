@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9623ab11-5bb3-477d-a56d-fe373b2bf608" name="Default" comment="update email in grupo cliente2">
+    <list default="true" id="9623ab11-5bb3-477d-a56d-fe373b2bf608" name="Default" comment="cambios en el grid de cada pestaña en incidencias y admin incidencia">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vistas/js/custom2.js" beforeDir="false" afterPath="$PROJECT_DIR$/vistas/js/custom2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vistas/modulos/detalle-incidencia.php" beforeDir="false" afterPath="$PROJECT_DIR$/vistas/modulos/detalle-incidencia.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extensiones/tcpdf/pdf/servicio-general.php" beforeDir="false" afterPath="$PROJECT_DIR$/extensiones/tcpdf/pdf/servicio-general.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extensiones/tcpdf/pdf/servicio-plomeria.php" beforeDir="false" afterPath="$PROJECT_DIR$/extensiones/tcpdf/pdf/servicio-plomeria.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vistas/modulos/admin-incidencia.php" beforeDir="false" afterPath="$PROJECT_DIR$/vistas/modulos/admin-incidencia.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vistas/modulos/incidencias.php" beforeDir="false" afterPath="$PROJECT_DIR$/vistas/modulos/incidencias.php" afterDir="false" />
     </list>
     <ignored path="RET.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,24 +40,94 @@
     <favorites_list name="RET" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vistas/modulos/detalle-incidencia.php">
+        <entry file="file://$PROJECT_DIR$/vistas/modulos/admin-incidencia.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="457" lean-forward="true" selection-start-line="457" selection-end-line="457" />
+            <state relative-caret-position="153">
+              <caret line="190" column="35" selection-end-line="989" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vistas/modulos/incidencias.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="181" column="69" lean-forward="true" selection-start-line="181" selection-start-column="69" selection-end-line="181" selection-end-column="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/extensiones/tcpdf/pdf/servicio-general.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="159" lean-forward="true" selection-start-line="159" selection-end-line="159" />
               <folding>
-                <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#2;n#tr#0;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#1;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#2;n#tr#1;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#3;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#3;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#2;n#tr#3;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#4;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#4;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#2;n#tr#4;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#3;n#tr#4;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#5;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#5;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#2;n#tr#5;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#6;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#6;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#2;n#tr#6;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#2;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#3;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#3;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#4;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#strong#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#2;n#tr#0;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#3;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#3;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#4;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#5;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#strong#0;n#td#0;n#tr#5;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#5;n#table#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vistas/js/custom2.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/extensiones/tcpdf/pdf/servicio-plomeria.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1853">
-              <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+            <state relative-caret-position="238">
+              <caret line="161" lean-forward="true" selection-start-line="161" selection-end-line="161" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="true" current-in-tab="true">
+        <entry file="remoteDeploymentFS://&lt;924e40af-ee08-4b6a-ba32-353b4885b79d&gt;/vistas/modulos/admin-incidencia.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="922">
+              <caret line="989" lean-forward="true" selection-start-line="989" selection-end-line="989" />
             </state>
           </provider>
         </entry>
@@ -71,13 +143,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>grupo</find>
-      <find>mdlBorrarCategoria</find>
-      <find>ctrBorrarCategoria</find>
-      <find>Productos más vendidos</find>
-      <find>productos-</find>
-      <find>flot-chart-content</find>
-      <find>flot-pie-chart</find>
       <find>&quot;Categorias&quot;</find>
       <find>borrar</find>
       <find>Los siguiente servicios se aprobaran</find>
@@ -101,6 +166,13 @@
       <find>ctrEnviarEmailAprobacion</find>
       <find>console</find>
       <find>var_</find>
+      <find>INSERTAMOS LOS ARCHIVOS DE LA INCIDENCIA</find>
+      <find>css</find>
+      <find>antes</find>
+      <find>$texto</find>
+      <find>Grupo:</find>
+      <find>$value[&quot;alias&quot;] .'-'.$value[</find>
+      <find>$value[&quot;alias&quot;] .'-'.$value[&quot;l</find>
     </findStrings>
     <dirStrings>
       <dir>C:\xampp\htdocs\frontendret\controladores</dir>
@@ -115,16 +187,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/modelos/usuarios.modelo.php" />
-        <option value="$PROJECT_DIR$/controladores/usuarios.controlador.php" />
-        <option value="$PROJECT_DIR$/vistas/modulos/usuarios.php" />
         <option value="$PROJECT_DIR$/modelos/clientes.modelo.php" />
         <option value="$PROJECT_DIR$/vistas/modulos/crear-incidencia.php" />
         <option value="$PROJECT_DIR$/vistas/modulos/menu.php" />
         <option value="$PROJECT_DIR$/vistas/plantilla.php" />
         <option value="$PROJECT_DIR$/vistas/modulos/grupo-incidencias.php" />
         <option value="$PROJECT_DIR$/vistas/modulos/panel-incidencias.php" />
-        <option value="$PROJECT_DIR$/vistas/modulos/incidencias.php" />
         <option value="$PROJECT_DIR$/modelos/ruta.php" />
         <option value="$PROJECT_DIR$/controladores/clientes.controlador.php" />
         <option value="&lt;924e40af-ee08-4b6a-ba32-353b4885b79d&gt;/modelos/ruta.php" />
@@ -134,14 +202,11 @@
         <option value="&lt;e40af651-eaea-4c83-869c-9d5348089dd6&gt;/modelos/ruta.php" />
         <option value="$PROJECT_DIR$/vistas/modulos/detalle-incidencia-cliente.php" />
         <option value="$PROJECT_DIR$/vistas/modulos/detalle-incidencia-grupo.php" />
-        <option value="$PROJECT_DIR$/extensiones/tcpdf/pdf/servicio-plomeria.php" />
         <option value="$PROJECT_DIR$/vistas/modulos/ver-servicio-de-plomeria.php" />
         <option value="&lt;924e40af-ee08-4b6a-ba32-353b4885b79d&gt;/vistas/modulos/ver-servicio-de-plomeria.php" />
-        <option value="&lt;924e40af-ee08-4b6a-ba32-353b4885b79d&gt;/vistas/modulos/admin-incidencia.php" />
         <option value="&lt;924e40af-ee08-4b6a-ba32-353b4885b79d&gt;/vistas/css/style.css" />
         <option value="$PROJECT_DIR$/vistas/modulos/servicio-general.php" />
         <option value="$PROJECT_DIR$/vistas/modulos/ver-servicio-general.php" />
-        <option value="$PROJECT_DIR$/extensiones/tcpdf/pdf/servicio-general.php" />
         <option value="&lt;924e40af-ee08-4b6a-ba32-353b4885b79d&gt;/vistas/modulos/servicio-general.php" />
         <option value="&lt;924e40af-ee08-4b6a-ba32-353b4885b79d&gt;/vistas/modulos/ver-servicio-general.php" />
         <option value="$PROJECT_DIR$/vistas/modulos/servicio-de-plomeria.php" />
@@ -166,6 +231,13 @@
         <option value="$PROJECT_DIR$/vistas/modulos/detalle-incidencia.php" />
         <option value="&lt;924e40af-ee08-4b6a-ba32-353b4885b79d&gt;/vistas/modulos/detalle-incidencia.php" />
         <option value="$PROJECT_DIR$/vistas/js/custom2.js" />
+        <option value="$PROJECT_DIR$/vistas/css/form.css" />
+        <option value="&lt;924e40af-ee08-4b6a-ba32-353b4885b79d&gt;/vistas/modulos/incidencias.php" />
+        <option value="$PROJECT_DIR$/vistas/modulos/admin-incidencia.php" />
+        <option value="$PROJECT_DIR$/vistas/modulos/incidencias.php" />
+        <option value="$PROJECT_DIR$/extensiones/tcpdf/pdf/servicio-general.php" />
+        <option value="$PROJECT_DIR$/extensiones/tcpdf/pdf/servicio-plomeria.php" />
+        <option value="&lt;924e40af-ee08-4b6a-ba32-353b4885b79d&gt;/vistas/modulos/admin-incidencia.php" />
       </list>
     </option>
   </component>
@@ -193,10 +265,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-4" />
-    <option name="y" value="-4" />
-    <option name="width" value="1448" />
-    <option name="height" value="880" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -214,12 +286,20 @@
             <path>
               <item name="RET" type="b2602c69:ProjectViewProjectNode" />
               <item name="frontendret" type="462c0819:PsiDirectoryNode" />
-              <item name="controladores" type="462c0819:PsiDirectoryNode" />
+              <item name="extensiones" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RET" type="b2602c69:ProjectViewProjectNode" />
               <item name="frontendret" type="462c0819:PsiDirectoryNode" />
               <item name="extensiones" type="462c0819:PsiDirectoryNode" />
+              <item name="tcpdf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RET" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frontendret" type="462c0819:PsiDirectoryNode" />
+              <item name="extensiones" type="462c0819:PsiDirectoryNode" />
+              <item name="tcpdf" type="462c0819:PsiDirectoryNode" />
+              <item name="pdf" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RET" type="b2602c69:ProjectViewProjectNode" />
@@ -230,12 +310,6 @@
               <item name="RET" type="b2602c69:ProjectViewProjectNode" />
               <item name="frontendret" type="462c0819:PsiDirectoryNode" />
               <item name="vistas" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RET" type="b2602c69:ProjectViewProjectNode" />
-              <item name="frontendret" type="462c0819:PsiDirectoryNode" />
-              <item name="vistas" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RET" type="b2602c69:ProjectViewProjectNode" />
@@ -328,7 +402,13 @@
       <workItem from="1651766296823" duration="856000" />
       <workItem from="1651851622473" duration="2569000" />
       <workItem from="1652188648254" duration="6913000" />
-      <workItem from="1652209792624" duration="5293000" />
+      <workItem from="1652209792624" duration="9598000" />
+      <workItem from="1652793627538" duration="3681000" />
+      <workItem from="1653337007097" duration="898000" />
+      <workItem from="1653421487757" duration="1856000" />
+      <workItem from="1653677173507" duration="2388000" />
+      <workItem from="1653680083405" duration="10000" />
+      <workItem from="1653940533629" duration="1801000" />
     </task>
     <task id="LOCAL-00001" summary="envio de email aprobado">
       <created>1639671498436</created>
@@ -379,16 +459,24 @@
       <option name="project" value="LOCAL" />
       <updated>1652216603223</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="cambios en el grid de cada pestaña en incidencias y admin incidencia">
+      <created>1653679922007</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1653679922007</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84790000" />
+    <option name="totallyTimeSpent" value="99729000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13006397" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.13646056" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -399,8 +487,8 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32885906" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32885906" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32981783" />
       <window_info anchor="bottom" id="RNConsole" order="10" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
@@ -408,7 +496,7 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Remote Host" order="3" visible="true" weight="0.123667374" />
+      <window_info active="true" anchor="right" id="Remote Host" order="3" visible="true" weight="0.20362474" />
       <window_info anchor="right" id="Database" order="4" weight="0.16523606" />
     </layout>
   </component>
@@ -431,15 +519,10 @@
     <MESSAGE value="update email de aprobado servicio" />
     <MESSAGE value="update email in grupo cliente" />
     <MESSAGE value="update email in grupo cliente2" />
-    <option name="LAST_COMMIT_MESSAGE" value="update email in grupo cliente2" />
+    <MESSAGE value="cambios en el grid de cada pestaña en incidencias y admin incidencia" />
+    <option name="LAST_COMMIT_MESSAGE" value="cambios en el grid de cada pestaña en incidencias y admin incidencia" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vistas/modulos/lista-cliente.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/vistas/modulos/panel-eventos.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -482,11 +565,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="242" column="53" selection-start-line="242" selection-start-column="53" selection-end-line="242" selection-end-column="53" />
-          <folding>
-            <marker date="1568740206218" expanded="true" signature="3166:3387" placeholder="..." />
-            <marker date="1568740206218" expanded="true" signature="4498:5098" placeholder="..." />
-            <marker date="1568740206218" expanded="true" signature="4563:5053" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -501,13 +579,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="961">
           <caret line="173" column="65" selection-start-line="173" selection-start-column="51" selection-end-line="173" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vistas/modulos/incidencias.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="961">
-          <caret line="171" selection-start-line="171" selection-end-line="171" />
         </state>
       </provider>
     </entry>
@@ -530,13 +601,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
           <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vistas/plantilla.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="242" column="24" selection-start-line="242" selection-start-column="24" selection-end-line="242" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -598,13 +662,6 @@
             <element signature="n#div#0;n#div#4;n#div#0;n#div#1;n#div#5;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" />
             <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#1;n#div#5;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extensiones/tcpdf/pdf/servicio-plomeria.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="405" lean-forward="true" selection-start-line="405" selection-end-line="405" />
         </state>
       </provider>
     </entry>
@@ -685,23 +742,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vistas/modulos/admin-incidencia.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="868" column="57" selection-start-line="868" selection-start-column="57" selection-end-line="868" selection-end-column="57" />
-          <folding>
-            <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modelos/conexion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vistas/modulos/clientes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="627">
@@ -723,13 +763,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
           <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extensiones/tcpdf/pdf/servicio-general.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="66" />
         </state>
       </provider>
     </entry>
@@ -784,27 +817,126 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/controladores/class.fileuploader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="123" column="20" selection-start-line="123" selection-start-column="20" selection-end-line="123" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/controladores/incidencia.controlador.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="462" lean-forward="true" selection-end-line="1719" selection-end-column="1" />
+        <state relative-caret-position="287">
+          <caret line="888" lean-forward="true" selection-start-line="888" selection-end-line="888" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vistas/css/form.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vistas/plantilla.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="31" column="25" lean-forward="true" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vistas/modulos/detalle-incidencia.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="457" lean-forward="true" selection-start-line="457" selection-end-line="457" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="484" column="64" selection-start-line="484" selection-start-column="59" selection-end-line="484" selection-end-column="64" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vistas/js/custom2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1853">
-          <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        <state relative-caret-position="391">
+          <caret line="23" column="52" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modelos/conexion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extensiones/tcpdf/pdf/servicio-general.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="159" lean-forward="true" selection-start-line="159" selection-end-line="159" />
+          <folding>
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#1;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#1;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#3;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#3;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#3;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#4;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#4;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#4;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#3;n#tr#4;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#5;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#5;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#5;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#6;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#6;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#6;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#2;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#3;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#3;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#4;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#strong#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#3;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#3;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#4;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#5;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#strong#0;n#td#0;n#tr#5;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#5;n#table#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extensiones/tcpdf/pdf/servicio-plomeria.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="161" lean-forward="true" selection-start-line="161" selection-end-line="161" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vistas/modulos/incidencias.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="181" column="69" lean-forward="true" selection-start-line="181" selection-start-column="69" selection-end-line="181" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vistas/modulos/admin-incidencia.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="190" column="35" selection-end-line="989" />
         </state>
       </provider>
     </entry>

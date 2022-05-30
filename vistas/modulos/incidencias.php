@@ -104,10 +104,10 @@ PÁGINA DE USUARIOS
                                             <th>Cliente</th>
                                             <th>Tipo servicio</th>
                                             <th>Dirección</th>
-                                            <th>Abierto por</th>
+<!--                                            <th>Abierto por</th>-->
                                             <th>Prioridad</th>
                                             <th>fecha visita</th>
-                                            <th>Estatus</th>
+<!--                                            <th>Estatus</th>-->
                                             <th>Estado</th>
                                             <th>Acciones</th>
 
@@ -181,21 +181,19 @@ PÁGINA DE USUARIOS
 
                                             <td>'.($value["id"]).'</td>
                                             
-                                            <td>'.($value["alias"] .'-'.$value["localizador"].'-'.$value["documento"]).'</td>
+                                            <td>'.($value["alias"] .'-'.$value["documento"].'-'.$value["localizador"]).'</td>
 
                                             <td>'.(str_replace("-"," ",$value["tipo_servicio"])).'</td>
 
                                             <td>'.($nombreCliente["direccion"]).'</td>
 
-                                            <td>'.($nombreUsuario["nombre"]).'</td>
+                                            
 
                                             <td>'.($value["prioridad"]).'</td>
 
                                             <td>'.(date_format(date_create($value["fecha_visita"]),"m-d-Y")).'</td>
 
-                                            <td> <span class="'.$clase.'">'.($texto).'</span></td>
-                                            
-                                            <td>'.$estatus_incidencia.'</td>
+                                           <td>'.$estatus_incidencia.'</td>
 
 
 
@@ -244,12 +242,12 @@ PÁGINA DE USUARIOS
                                             <th style="width:10px">#</th>
                                             <th>Cliente</th>
                                             <th>Tipo servicio</th>
-                                            <th>Dirección</th>
-                                            <th>Abierto por</th>
-                                            <th>Prioridad</th>
+<!--                                            <th>Dirección</th>-->
+<!--                                            <th>Abierto por</th>-->
+<!--                                            <th>Prioridad</th>-->
                                             <th>fecha visita</th>
-                                            <th>Estatus</th>
-                                            <th>Estado</th>
+<!--                                            <th>Estatus</th>-->
+<!--                                            <th>Estado</th>-->
                                             <th>Acciones</th>
 
 
@@ -322,21 +320,15 @@ PÁGINA DE USUARIOS
 
                                             <td>'.($value["id"]).'</td>
                                                                                        
-                                            <td>'.($value["alias"] .'-'.$value["localizador"].'-'.$value["documento"]).'</td>
+                                            <td>'.($value["alias"] .'-'.$value["documento"].'-'.$value["localizador"]).'</td>
 
                                             <td>'.(str_replace("-"," ",$value["tipo_servicio"])).'</td>
 
-                                            <td>'.($nombreCliente["direccion"]).'</td>
-
-                                            <td>'.($nombreUsuario["nombre"]).'</td>
-
-                                            <td>'.($value["prioridad"]).'</td>
+                                          
 
                                             <td>'.(date_format(date_create($value["fecha_visita"]),"m-d-Y")).'</td>
 
-                                            <td> <span class="'.$clase.'">'.($texto).'</span></td>
-                                            
-                                            <td>'.$estatus_incidencia.'</td>
+                                          
 
 
 
@@ -383,12 +375,13 @@ PÁGINA DE USUARIOS
 
                                             <th style="width:10px">#</th>
                                             <th>Cliente</th>
-                                            <th>Tipo servicio</th>
-                                            <th>Dirección</th>
-                                            <th>Abierto por</th>
-                                            <th>Prioridad</th>
+<!--                                            <th>Tipo servicio</th>-->
+<!--                                            <th>Dirección</th>-->
+<!--                                            <th>Abierto por</th>-->
+<!--                                            <th>Prioridad</th>-->
                                             <th>fecha visita</th>
-                                            <th>Estatus</th>
+<!--                                            <th>fecha terminado</th>-->
+<!--                                            <th>Estatus</th>-->
                                             <th>Estado</th>
                                             <th>Acciones</th>
 
@@ -462,19 +455,13 @@ PÁGINA DE USUARIOS
 
                                             <td>'.($value["id"]).'</td>
                                             
-                                            <td>'.($value["alias"] .'-'.$value["localizador"].'-'.$value["documento"]).'</td>
+                                            <td>'.($value["alias"] .'-'.$value["documento"].'-'.$value["localizador"]).'</td>
 
-                                            <td>'.(str_replace("-"," ",$value["tipo_servicio"])).'</td>
-
-                                            <td>'.($nombreCliente["direccion"]).'</td>
-
-                                            <td>'.($nombreUsuario["nombre"]).'</td>
-
-                                            <td>'.($value["prioridad"]).'</td>
+                                           
 
                                             <td>'.(date_format(date_create($value["fecha_visita"]),"m-d-Y")).'</td>
-
-                                            <td> <span class="'.$clase.'">'.($texto).'</span></td>
+                                            
+                                           
                                             
                                             <td>'.$estatus_incidencia.'</td>
 

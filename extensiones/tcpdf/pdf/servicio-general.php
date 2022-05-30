@@ -178,7 +178,7 @@ EOF;
                 <td style="border: 1px solid #666; background-color:white; text-align:center width:100%"><h3>HOJA DE SERVICIO Y MANIFIESTO</h3></td>
             </tr>
             <tr>
-                <td style="border: 1px solid #666; background-color:white; width:270px">Cliente: $datosCliente[alias] - $datosCliente[localizador] - $datosCliente[documento]</td>
+                <td style="border: 1px solid #666; background-color:white; width:270px">Cliente: $datosCliente[alias] - $datosCliente[documento] - $datosCliente[localizador]</td>
                 <td style="border: 1px solid #666; background-color:white; width:140px; text-align:left">Fecha: $fecha_visita</td>        
                 <td style="border: 1px solid #666; background-color:white; width:130px; text-align:left">Grupo: $datosCliente[alias] </td>
             </tr>
