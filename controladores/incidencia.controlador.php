@@ -463,13 +463,15 @@ class ControladorIncidencia{
 
         $mail->isMail();
 
-        $mail->addReplyTo($data["email_grupo"]);
+        //$mail->addReplyTo($data["email_grupo"]);
 
         $mail->setFrom('no-reply@ret.com', 'RET');
 
         $mail->Subject = "APROBACION DE SERVICIO";
 
         $mail->addAddress($data["email"]);
+        $mail->AddCC($data["email_grupo"]);
+
 
         $mail->msgHTML('
                                 <div style="width:100%; background:#eee; position:relative; font-family:sans-serif; padding-bottom:40px">

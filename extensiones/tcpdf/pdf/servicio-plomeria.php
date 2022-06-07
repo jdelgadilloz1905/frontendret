@@ -20,9 +20,9 @@ class imprimirServicioPlomeria{
 
     public function traerImpresionServicioPlomeria(){
 
-    //TRAEMOS LA INFORMACIÓN DEL SERVICIO PLOMERIA
+        //TRAEMOS LA INFORMACIÓN DEL SERVICIO PLOMERIA
 
-    $itemIncidencia = "id";
+        $itemIncidencia = "id";
         $id_incidencia = $this->codigo;
 
         $incidencia = ControladorIncidencia::ctrMostrarIncidencias("id",$id_incidencia);
@@ -41,19 +41,19 @@ class imprimirServicioPlomeria{
 
         $url = Ruta::ctrRuta();
         $idIncidencia = $id_incidencia;
-    $id_incidencia = str_pad($id_incidencia, 6, "0", STR_PAD_LEFT);
+        $id_incidencia = str_pad($id_incidencia, 6, "0", STR_PAD_LEFT);
 
-    switch($incidencia["tipo_servicio"]){
-        case "plomeria":
-            $tipoServicio = "Plomeria";
-            break;
-        case "recogido-de-liquido":
-            $tipoServicio = "Recogido de liquido";
-            break;
-        case "limpieza-de-campana":
-            $tipoServicio = "Limpieza de campana";
-            break;
-    }
+        switch($incidencia["tipo_servicio"]){
+            case "plomeria":
+                $tipoServicio = "Plomeria";
+                break;
+            case "recogido-de-liquido":
+                $tipoServicio = "Recogido de liquido";
+                break;
+            case "limpieza-de-campana":
+                $tipoServicio = "Limpieza de campana";
+                break;
+        }
 
         $nombre_tecnicos='';
         foreach ($listaVendedor as $key => $value) {
@@ -101,20 +101,22 @@ class imprimirServicioPlomeria{
 
         $fecha_visita = date_format(date_create($incidencia["fecha_visita"]),"m-d-Y ");
 
-    //REQUERIMOS LA CLASE TCPDF
+        $listaProducto = json_decode($servicio["productos"], true);
 
-    require_once('tcpdf_include.php');
+        //REQUERIMOS LA CLASE TCPDF
 
-    $pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
+        require_once('tcpdf_include.php');
 
-    $pdf->startPageGroup();
+        $pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
 
-    $pdf->AddPage();
+        $pdf->startPageGroup();
+
+        $pdf->AddPage();
 
 
-    // ---------------------------------------------------------
+        // ---------------------------------------------------------
 
-    $bloque1 = <<<EOF
+        $bloque1 = <<<EOF
 
     <table>
         <tr>
@@ -141,13 +143,13 @@ class imprimirServicioPlomeria{
 EOF;
 
 
-    $pdf->writeHTML($bloque1, false, false, false, false, '');
+        $pdf->writeHTML($bloque1, false, false, false, false, '');
 
-    // ---------------------------------------------------------
+        // ---------------------------------------------------------
 
 
 
-    // ---------------------------------------------------------
+        // ---------------------------------------------------------
 
         $bloque2 = <<<EOF
 
@@ -162,7 +164,7 @@ EOF;
 
             <tr>
 
-            <td style="border: 1px solid #666; background-color:white; width:270px">Cliente: $datosCliente[alias] - $datosCliente[documento] - $datosCliente[localizador]</td>
+            <td style="border: 1px solid #666; background-color:white; width:270px">Cliente: $datosCliente[alias] - $datosCliente[localizador] - $datosCliente[documento]</td>
 
 
             <td style="border: 1px solid #666; background-color:white; width:270px; text-align:left">Fecha: $fecha_visita</td>
@@ -328,8 +330,9 @@ EOF;
         $pdf->writeHTML($bloque2, false, false, false, false, '');
 
         /*BLOQUE DE ITEM DE PRODUCTO*/
-        $listaProducto = json_decode($servicio["productos"], true);
-        if(isset($listaProducto)){
+
+
+        if($listaProducto != null){
 
             $textcolors = '<table>
                             <tr>
@@ -360,12 +363,14 @@ EOF;
 
             $textcolors .= '</table>';
 
-// output the HTML content
+            // output the HTML content
             $pdf->writeHTML($textcolors, true, false, true, false, '');
+
+            $pdf->AddPage();
         }
         // ---------------------------------------------------------
 
-        $pdf->AddPage();
+
 
         $bloque3 = <<<EOF
 
@@ -408,7 +413,7 @@ EOF;
             </tr>
 
             <tr>
-                <td style="width:270px">Firma Cliente: <strong><img src="$url/vistas/img/firmas/$idIncidencia.png" style="height: 100px; width: 100px;"></strong></td>
+                <td style="width:270px">Firma Cliente: <strong><img src="$url/vistas/img/firmas/$idIncidencia.png" style="height: 50px; width: 50px;"></strong></td>
                 
                 <td style="width:270px">Titulo: <strong>$servicio[titulo]</strong></td>
 
@@ -423,7 +428,7 @@ EOF;
 
             </tr>
             <tr>
-                <td style="width:270px">Firma Aprobación: <strong><img src="$image_firma" style="height: 100px; width: 100px;"></strong>
+                <td style="width:270px">Firma Aprobación: <strong><img src="$image_firma" style="height: 50px; width: 50px;"></strong>
                     <strong>$nombre_usuario_aprobado</strong>  
                 </td>
 
@@ -436,10 +441,10 @@ EOF;
 
         $pdf->writeHTML($bloque1, false, false, false, false, '');
 
-    // ---------------------------------------------------------
-    //SALIDA DEL ARCHIVO
+        // ---------------------------------------------------------
+        //SALIDA DEL ARCHIVO
 
-    $pdf->Output('servicio-plomeria'.$_GET["codigo"].'.pdf');
+        $pdf->Output('servicio-plomeria'.$_GET["codigo"].'.pdf');
 
     }
 
@@ -449,5 +454,5 @@ $a = new imprimirServicioPlomeria();
 $a -> codigo = $_GET["codigo"];
 $a -> traerImpresionServicioPlomeria();
 
- ?>
+?>
  

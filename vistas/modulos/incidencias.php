@@ -85,9 +85,9 @@ PÁGINA DE USUARIOS
                         </div>
 
                         <ul class="nav nav-tabs customtab2" role="tablist">
-                            <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#iniciar" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Por iniciar</span></a> </li>
-                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#proceso" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">En proceso</span></a> </li>
-                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#terminado" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Terminado</span></a> </li>
+                            <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#iniciar" role="tab" onclick="resizeDatatable()"><span class="hidden-sm-up">Iniciar</span> <span class="hidden-xs-down">Por iniciar</span></a> </li>
+                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#proceso" role="tab" onclick="resizeDatatable()"><span class="hidden-sm-up">Proceso</span> <span class="hidden-xs-down">En proceso</span></a> </li>
+                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#terminado" role="tab" onclick="resizeDatatable()"><span class="hidden-sm-up">Terminado</span> <span class="hidden-xs-down">Terminado</span></a> </li>
                         </ul>
 
                         <div class="tab-content">
@@ -104,10 +104,10 @@ PÁGINA DE USUARIOS
                                             <th>Cliente</th>
                                             <th>Tipo servicio</th>
                                             <th>Dirección</th>
-<!--                                            <th>Abierto por</th>-->
+                                            <!--                                            <th>Abierto por</th>-->
                                             <th>Prioridad</th>
                                             <th>fecha visita</th>
-<!--                                            <th>Estatus</th>-->
+                                            <!--                                            <th>Estatus</th>-->
                                             <th>Estado</th>
                                             <th>Acciones</th>
 
@@ -242,12 +242,12 @@ PÁGINA DE USUARIOS
                                             <th style="width:10px">#</th>
                                             <th>Cliente</th>
                                             <th>Tipo servicio</th>
-<!--                                            <th>Dirección</th>-->
-<!--                                            <th>Abierto por</th>-->
-<!--                                            <th>Prioridad</th>-->
+                                            <!--                                            <th>Dirección</th>-->
+                                            <!--                                            <th>Abierto por</th>-->
+                                            <!--                                            <th>Prioridad</th>-->
                                             <th>fecha visita</th>
-<!--                                            <th>Estatus</th>-->
-<!--                                            <th>Estado</th>-->
+                                            <!--                                            <th>Estatus</th>-->
+                                            <!--                                            <th>Estado</th>-->
                                             <th>Acciones</th>
 
 
@@ -375,13 +375,13 @@ PÁGINA DE USUARIOS
 
                                             <th style="width:10px">#</th>
                                             <th>Cliente</th>
-<!--                                            <th>Tipo servicio</th>-->
-<!--                                            <th>Dirección</th>-->
-<!--                                            <th>Abierto por</th>-->
-<!--                                            <th>Prioridad</th>-->
+                                            <!--                                            <th>Tipo servicio</th>-->
+                                            <!--                                            <th>Dirección</th>-->
+                                            <!--                                            <th>Abierto por</th>-->
+                                            <!--                                            <th>Prioridad</th>-->
                                             <th>fecha visita</th>
-<!--                                            <th>fecha terminado</th>-->
-<!--                                            <th>Estatus</th>-->
+                                            <!--                                            <th>fecha terminado</th>-->
+                                            <!--                                            <th>Estatus</th>-->
                                             <th>Estado</th>
                                             <th>Acciones</th>
 
