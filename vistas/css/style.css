@@ -10212,5 +10212,6 @@ table.table {
 
 .btn-sm.marcar,
 .btn-sm.marcarAprobar {
-	color: #67757c;
+	color: #ddd;
+	background-color: #ddd;
 }
